@@ -617,7 +617,16 @@ int scale(int a, int b, int c)
     return r / c;
 }
 
-#pragma GLOBAL_ASM("asm/nonmatchings/engine/nsqrtasm.s")
+float sqrtf(float);
+#pragma intrinsic sqrtf
+
+int nsqrtasm(int a)
+{
+    if (a < 0)
+        return 1;
+
+    return (int)sqrtf((double)a);
+}
 
 int klabs(int a) {
     if (a < 0)
@@ -730,7 +739,13 @@ int getangle(long xvect, long yvect)
 	return(((radarang[640-scale(160,xvect,yvect)]>>6)+512+((yvect<0)<<10))&2047);
 }
 
-#pragma GLOBAL_ASM("asm/nonmatchings/engine/ksqrt.s")
+int ksqrt(long num)
+{
+    if (num < 0)
+        return 1;
+
+    return (int)sqrtf((double)num);
+}
 
 int setsprite(short spritenum, long newx, long newy, long newz)
 {
@@ -2374,6 +2389,16 @@ void alignflorslope(short dasect, long x, long y, long z)
 											  else sector[dasect].floorstat |= 2;
 }
 
-#pragma GLOBAL_ASM("asm/nonmatchings/engine/FindDistance2D.s")
-
-#pragma GLOBAL_ASM("asm/nonmatchings/engine/FindDistance3D.s")
+int FindDistance2D(int x, int y)
+{
+    float fx = x;
+    float fy = y;
+    return (int)sqrtf(fx * fx + fy * fy);
+}
+int FindDistance3D(int x, int y, int z)
+{
+    float fx = x;
+    float fy = y;
+    float fz = z;
+    return (int)sqrtf(fx * fx + fy * fy + fz * fz);
+}

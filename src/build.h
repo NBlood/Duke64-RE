@@ -223,6 +223,9 @@ int getflorzofslope(short sectnum, long dax, long day);
 void getzsofslope(short sectnum, long dax, long day, long *ceilz, long *florz);
 void alignflorslope(short dasect, long x, long y, long z);
 
+int FindDistance2D(int x, int y);
+int FindDistance3D(int x, int y, int z);
+
 int gettilesizx(unsigned short picnum);
 int gettilesizy(unsigned short picnum);
 int getpicanm(unsigned short picnum);
