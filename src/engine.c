@@ -413,203 +413,69 @@ int divscale(long long a, long long b, char c)
     return (a << c) / b;
 }
 
-#if 0
+int divscale1(long long a, long long b) { return (a << 1) / b; }
 
-int divscale1(long long a, long long b)
-{
-    return (a << 1) / b;
-}
+int divscale2(long long a, long long b) { return (a << 2) / b; }
 
-int divscale2(long long a, long long b)
-{
-    return (a << 2) / b;
-}
+int divscale3(long long a, long long b) { return (a << 3) / b; }
 
-int divscale3(long long a, long long b)
-{
-    return (a << 3) / b;
-}
+int divscale4(long long a, long long b) { return (a << 4) / b; }
 
-int divscale4(long long a, long long b)
-{
-    return (a << 4) / b;
-}
+int divscale5(long long a, long long b) { return (a << 5) / b; }
 
-int divscale5(long long a, long long b)
-{
-    return (a << 5) / b;
-}
+int divscale6(long long a, long long b) { return (a << 6) / b; }
 
-int divscale6(long long a, long long b)
-{
-    return (a << 6) / b;
-}
+int divscale7(long long a, long long b) { return (a << 7) / b; }
 
-int divscale7(long long a, long long b)
-{
-    return (a << 7) / b;
-}
+int divscale8(long long a, long long b) { return (a << 8) / b; }
 
-int divscale8(long long a, long long b)
-{
-    return (a << 8) / b;
-}
+int divscale9(long long a, long long b) { return (a << 9) / b; }
 
-int divscale9(long long a, long long b)
-{
-    return (a << 9) / b;
-}
+int divscale10(long long a, long long b) { return (a << 10) / b; }
 
-int divscale10(long long a, long long b)
-{
-    return (a << 10) / b;
-}
+int divscale11(long long a, long long b) { return (a << 11) / b; }
 
-int divscale11(long long a, long long b)
-{
-    return (a << 11) / b;
-}
+int divscale12(long long a, long long b) { return (a << 12) / b; }
 
-int divscale12(long long a, long long b)
-{
-    return (a << 12) / b;
-}
+int divscale13(long long a, long long b) { return (a << 13) / b; }
 
-int divscale13(long long a, long long b)
-{
-    return (a << 13) / b;
-}
+int divscale14(long long a, long long b) { return (a << 14) / b; }
 
-int divscale14(long long a, long long b)
-{
-    return (a << 14) / b;
-}
+int divscale15(long long a, long long b) { return (a << 15) / b; }
 
-int divscale15(long long a, long long b)
-{
-    return (a << 15) / b;
-}
+int divscale16(long long a, long long b) { return (a << 16) / b; }
 
-int divscale16(long long a, long long b)
-{
-    return (a << 16) / b;
-}
+int divscale17(long long a, long long b) { return (a << 17) / b; }
 
-int divscale17(long long a, long long b)
-{
-    return (a << 17) / b;
-}
+int divscale18(long long a, long long b) { return (a << 18) / b; }
 
-int divscale18(long long a, long long b)
-{
-    return (a << 18) / b;
-}
+int divscale19(long long a, long long b) { return (a << 19) / b; }
 
-int divscale19(long long a, long long b)
-{
-    return (a << 19) / b;
-}
+int divscale20(long long a, long long b) { return (a << 20) / b; }
 
-int divscale20(long long a, long long b)
-{
-    return (a << 20) / b;
-}
+int divscale21(long long a, long long b) { return (a << 21) / b; }
 
-int divscale21(long long a, long long b)
-{
-    return (a << 21) / b;
-}
+int divscale22(long long a, long long b) { return (a << 22) / b; }
 
-int divscale22(long long a, long long b)
-{
-    return (a << 22) / b;
-}
+int divscale23(long long a, long long b) { return (a << 23) / b; }
 
-int divscale23(long long a, long long b)
-{
-    return (a << 23) / b;
-}
+int divscale24(long long a, long long b) { return (a << 24) / b; }
 
-int divscale24(long long a, long long b)
-{
-    return (a << 24) / b;
-}
+int divscale25(long long a, long long b) { return (a << 25) / b; }
 
-int divscale25(long long a, long long b)
-{
-    return (a << 25) / b;
-}
+int divscale26(long long a, long long b) { return (a << 26) / b; }
 
-int divscale26(long long a, long long b)
-{
-    return (a << 26) / b;
-}
+int divscale27(long long a, long long b) { return (a << 27) / b; }
 
-int divscale27(long long a, long long b)
-{
-    return (a << 27) / b;
-}
+int divscale28(long long a, long long b) { return (a << 28) / b; }
 
-int divscale28(long long a, long long b)
-{
-    return (a << 28) / b;
-}
+int divscale29(long long a, long long b) { return (a << 29) / b; }
 
-int divscale29(long long a, long long b)
-{
-    return (a << 29) / b;
-}
+int divscale30(long long a, long long b) { return (a << 30) / b; }
 
-int divscale30(long long a, long long b)
-{
-    return (a << 30) / b;
-}
+int divscale31(long long a, long long b) { return (a << 31) / b; }
 
-int divscale31(long long a, long long b)
-{
-    return (a << 31) / b;
-}
-
-int divscale32(long long a, long long b)
-{
-    return (a << 32) / b;
-}
-#else
-
-#pragma GLOBAL_ASM("asm/nonmatchings/engine/divscale1.s")
-#pragma GLOBAL_ASM("asm/nonmatchings/engine/divscale2.s")
-#pragma GLOBAL_ASM("asm/nonmatchings/engine/divscale3.s")
-#pragma GLOBAL_ASM("asm/nonmatchings/engine/divscale4.s")
-#pragma GLOBAL_ASM("asm/nonmatchings/engine/divscale5.s")
-#pragma GLOBAL_ASM("asm/nonmatchings/engine/divscale6.s")
-#pragma GLOBAL_ASM("asm/nonmatchings/engine/divscale7.s")
-#pragma GLOBAL_ASM("asm/nonmatchings/engine/divscale8.s")
-#pragma GLOBAL_ASM("asm/nonmatchings/engine/divscale9.s")
-#pragma GLOBAL_ASM("asm/nonmatchings/engine/divscale10.s")
-#pragma GLOBAL_ASM("asm/nonmatchings/engine/divscale11.s")
-#pragma GLOBAL_ASM("asm/nonmatchings/engine/divscale12.s")
-#pragma GLOBAL_ASM("asm/nonmatchings/engine/divscale13.s")
-#pragma GLOBAL_ASM("asm/nonmatchings/engine/divscale14.s")
-#pragma GLOBAL_ASM("asm/nonmatchings/engine/divscale15.s")
-#pragma GLOBAL_ASM("asm/nonmatchings/engine/divscale16.s")
-#pragma GLOBAL_ASM("asm/nonmatchings/engine/divscale17.s")
-#pragma GLOBAL_ASM("asm/nonmatchings/engine/divscale18.s")
-#pragma GLOBAL_ASM("asm/nonmatchings/engine/divscale19.s")
-#pragma GLOBAL_ASM("asm/nonmatchings/engine/divscale20.s")
-#pragma GLOBAL_ASM("asm/nonmatchings/engine/divscale21.s")
-#pragma GLOBAL_ASM("asm/nonmatchings/engine/divscale22.s")
-#pragma GLOBAL_ASM("asm/nonmatchings/engine/divscale23.s")
-#pragma GLOBAL_ASM("asm/nonmatchings/engine/divscale24.s")
-#pragma GLOBAL_ASM("asm/nonmatchings/engine/divscale25.s")
-#pragma GLOBAL_ASM("asm/nonmatchings/engine/divscale26.s")
-#pragma GLOBAL_ASM("asm/nonmatchings/engine/divscale27.s")
-#pragma GLOBAL_ASM("asm/nonmatchings/engine/divscale28.s")
-#pragma GLOBAL_ASM("asm/nonmatchings/engine/divscale29.s")
-#pragma GLOBAL_ASM("asm/nonmatchings/engine/divscale30.s")
-#pragma GLOBAL_ASM("asm/nonmatchings/engine/divscale31.s")
-#pragma GLOBAL_ASM("asm/nonmatchings/engine/divscale32.s")
-
-#endif
+int divscale32(long long a, long long b) { return (a << 32) / b; }
 
 int scale(int a, int b, int c)
 {
@@ -2395,6 +2261,7 @@ int FindDistance2D(int x, int y)
     float fy = y;
     return (int)sqrtf(fx * fx + fy * fy);
 }
+
 int FindDistance3D(int x, int y, int z)
 {
     float fx = x;
