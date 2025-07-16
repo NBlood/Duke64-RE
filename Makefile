@@ -19,8 +19,8 @@ PYTHON := python3
 OBJECTS := \
     $(OUTPUT)/header.o \
     $(OUTPUT)/assets/boot.o \
-    $(OUTPUT)/asm/entry.o \
-    $(OUTPUT)/asm/main.o \
+    $(OUTPUT)/src/entry.o \
+    $(OUTPUT)/src/main.o \
     $(OUTPUT)/asm/sched.o \
     $(OUTPUT)/asm/control.o \
     $(OUTPUT)/asm/game1.o \
@@ -226,7 +226,7 @@ OBJECTS := \
     $(OUTPUT)/src/libultra/audio/filter.o \
     $(OUTPUT)/src/libultra/audio/reverb.o \
     $(OUTPUT)/src/libultra/libc/ldiv.o \
-    $(OUTPUT)/data/asm/main.data.o \
+    $(OUTPUT)/data/src/main.data.o \
     $(OUTPUT)/data/asm/sched.data.o \
     $(OUTPUT)/data/asm/control.data.o \
     $(OUTPUT)/data/asm/game1.data.o \
@@ -258,7 +258,6 @@ OBJECTS := \
     $(OUTPUT)/data/asm/menues.data.o \
     $(OUTPUT)/data/asm/global.data.o \
     $(OUTPUT)/data/asm/libultra/os/exceptasm.data.o \
-    $(OUTPUT)/data/asm/main.rodata.o \
     $(OUTPUT)/data/asm/sched.rodata.o \
     $(OUTPUT)/data/asm/control.rodata.o \
     $(OUTPUT)/data/asm/game1.rodata.o \
@@ -293,7 +292,7 @@ OBJECTS := \
     $(OUTPUT)/data/asm/libultra/libc/xldtob.rodata.o \
     $(OUTPUT)/data/asm/libultra/audio/seq.rodata.o \
     $(OUTPUT)/data/asm/libultra/audio/reverb.rodata.o \
-    $(OUTPUT)/data/asm/main.bss.o \
+    $(OUTPUT)/data/src/main.bss.o \
     $(OUTPUT)/data/asm/control.bss.o \
     $(OUTPUT)/data/asm/game1.bss.o \
     $(OUTPUT)/data/asm/control2.bss.o \
@@ -316,6 +315,7 @@ OBJECTS := \
     $(OUTPUT)/data/asm/global2.bss.o \
     $(OUTPUT)/data/asm/libultra/io/leointerrupt.bss.o \
     $(OUTPUT)/assets/palette.o \
+    $(OUTPUT)/src/dlstatic.o \
     $(OUTPUT)/assets/tileblob.o \
     $(OUTPUT)/assets/board01.o \
     $(OUTPUT)/assets/board02.o \
@@ -357,7 +357,9 @@ OBJECTS := \
     $(OUTPUT)/assets/musicctl.o \
     $(OUTPUT)/assets/musictbl.o \
     $(OUTPUT)/data/ucode/rdp.o \
-    $(OUTPUT)/data/ucode/rspucode.o \
+    $(OUTPUT)/data/ucode/asp.o \
+    $(OUTPUT)/data/ucode/rdp_data.o \
+    $(OUTPUT)/data/ucode/asp_data.o \
     $(OUTPUT)/data/ucode/boot.o \
 
 

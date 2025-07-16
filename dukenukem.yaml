@@ -62,7 +62,7 @@ segments:
     start: 0x1000
     vram: 0x8004B400
     subsegments:
-      - [0x1000, asm, asm/entry]
+      - [0x1000, hasm, src/entry]
 
   - name: main
     type: code
@@ -71,7 +71,7 @@ segments:
     follows_vram: entry
     bss_size: 0x1A3B30
     subsegments:
-      - [0x1050, asm, asm/main]
+      - [0x1050, c, src/main]
       - [0x2010, asm, asm/sched]
       - [0x2B80, asm, asm/control]
       - [0x3550, asm, asm/game1]
@@ -282,9 +282,10 @@ segments:
       - [0x861C0, c, src/libultra/audio/filter]
       - [0x861E0, c, src/libultra/audio/reverb]
       - [0x86E30, c, src/libultra/libc/ldiv]
-      - [0x86FC0, textbin, ucode/boot]
-      - [0x87090, textbin, ucode/rdp]
-      - [0x892B0, data, asm/main]
+      - [0x86FC0, textbin, ucode/boot] # rspbootTextStart
+      - [0x87090, textbin, ucode/rdp] # gspFast3DTextStart
+      - [0x88490, textbin, ucode/asp] # aspMainTextStart
+      - [0x892B0, .data, src/main]
       - [0x89300, data, asm/sched]
       - [0x89340, data, asm/control]
       - [0x89350, data, asm/game1]
@@ -335,7 +336,7 @@ segments:
       - [0xB81B0, .data, src/libultra/io/vimodempallan1]
       - [0xB8200, .data, src/libultra/io/vimodentsclan1]
       - [0xB8250, .data, src/libultra/libc/xlitob]
-      - [0xB8280, rodata, asm/main]
+      - [0xB8280, .rodata, src/main]
       - [0xB8320, rodata, asm/sched]
       - [0xB8340, rodata, asm/control]
       - [0xB8450, rodata, asm/game1]
@@ -387,8 +388,9 @@ segments:
       - [0xBFD20, .rodata, src/libultra/libc/xldtob]
       - [0xBFD80, .rodata, src/libultra/audio/seq]
       - [0xBFD90, .rodata, src/libultra/audio/reverb]
-      - [0xBFDC0, rodatabin, ucode/rspucode]
-      - { type: bss, vram: 0x8010AC80, name: asm/main }
+      - [0xBFDC0, rodatabin, ucode/rdp_data] # gspFast3DDataStart
+      - [0xC05C0, rodatabin, ucode/asp_data] # aspMainDataStart
+      - { type: .bss, vram: 0x8010AC80, name: src/main }
       - { type: bss, vram: 0x801C92F0, name: asm/control }
       - { type: bss, vram: 0x801C94D0, name: asm/game1 }
       - { type: bss, vram: 0x801CB8E0, name: asm/control2 }
@@ -429,11 +431,10 @@ segments:
   - name: palette
     type: code
     start: 0xC0880
-    vram: 0
+    vram: 0x01000000
     subsegments:
       - [0xC0880, bin, palette]
- 
-# C20E0-C2270
+      - [0xC20E0, .data, src/dlstatic]
 
   - name: tiles
     type: code

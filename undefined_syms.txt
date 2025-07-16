@@ -1,3 +1,10 @@
+rspbootTextStart            = 0x800D13C0;
+gspFast3DTextStart          = 0x800D1490;
+rspbootTextEnd              = 0x800D1490;
+gspFast3DDataStart          = 0x8010A1C0;
+palettes                    = 0x802AE7B0;
+palettes_rom = 0xC0880;
+palettes_rom_end = 0xC0880+0x19F0;
 D_C0880 = 0xC0880;
 D_C2270 = 0xC2270;
 D_3DA800 = 0x3DA800;
