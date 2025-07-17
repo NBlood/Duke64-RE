@@ -36,7 +36,7 @@ OBJECTS := \
     $(OUTPUT)/asm/draw.o \
     $(OUTPUT)/asm/rnc.o \
     $(OUTPUT)/asm/display1.o \
-    $(OUTPUT)/asm/cache1d.o \
+    $(OUTPUT)/src/cache1d.o \
     $(OUTPUT)/asm/display2.o \
     $(OUTPUT)/asm/actors1.o \
     $(OUTPUT)/asm/actors2.o \
@@ -242,7 +242,7 @@ OBJECTS := \
     $(OUTPUT)/data/asm/draw.data.o \
     $(OUTPUT)/data/asm/tileinfo.data.o \
     $(OUTPUT)/data/asm/display1.data.o \
-    $(OUTPUT)/data/asm/cache1d.data.o \
+    $(OUTPUT)/data/src/cache1d.data.o \
     $(OUTPUT)/data/asm/display2.data.o \
     $(OUTPUT)/data/asm/actors1.data.o \
     $(OUTPUT)/data/asm/actors2.data.o \
@@ -270,7 +270,6 @@ OBJECTS := \
     $(OUTPUT)/data/asm/rend2.rodata.o \
     $(OUTPUT)/data/asm/getangle.rodata.o \
     $(OUTPUT)/data/asm/draw.rodata.o \
-    $(OUTPUT)/data/asm/cache1d.rodata.o \
     $(OUTPUT)/data/asm/display2.rodata.o \
     $(OUTPUT)/data/asm/actors1.rodata.o \
     $(OUTPUT)/data/asm/actors2.rodata.o \
@@ -303,7 +302,7 @@ OBJECTS := \
     $(OUTPUT)/data/asm/rend2.bss.o \
     $(OUTPUT)/data/asm/draw.bss.o \
     $(OUTPUT)/data/asm/rnc.bss.o \
-    $(OUTPUT)/data/asm/cache1d.bss.o \
+    $(OUTPUT)/data/src/cache1d.bss.o \
     $(OUTPUT)/data/asm/actors1.bss.o \
     $(OUTPUT)/data/asm/gamedef.bss.o \
     $(OUTPUT)/data/src/engine.bss.o \
