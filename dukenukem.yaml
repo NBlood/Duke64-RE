@@ -72,7 +72,7 @@ segments:
     bss_size: 0x1A3B30
     subsegments:
       - [0x1050, c, src/main]
-      - [0x2010, asm, asm/sched]
+      - [0x2010, c, src/sched]
       - [0x2B80, asm, asm/control]
       - [0x3550, asm, asm/game1]
       - [0x7450, asm, asm/control2]
@@ -286,7 +286,7 @@ segments:
       - [0x87090, textbin, ucode/rdp] # gspFast3DTextStart
       - [0x88490, textbin, ucode/asp] # aspMainTextStart
       - [0x892B0, .data, src/main]
-      - [0x89300, data, asm/sched]
+      - [0x89300, .data, src/sched]
       - [0x89340, data, asm/control]
       - [0x89350, data, asm/game1]
       - [0x894B0, data, asm/control2]
@@ -337,7 +337,7 @@ segments:
       - [0xB8200, .data, src/libultra/io/vimodentsclan1]
       - [0xB8250, .data, src/libultra/libc/xlitob]
       - [0xB8280, .rodata, src/main]
-      - [0xB8320, rodata, asm/sched]
+      - [0xB8320, .rodata, src/sched]
       - [0xB8340, rodata, asm/control]
       - [0xB8450, rodata, asm/game1]
       - [0xB9470, rodata, asm/control2]

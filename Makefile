@@ -21,7 +21,7 @@ OBJECTS := \
     $(OUTPUT)/assets/boot.o \
     $(OUTPUT)/src/entry.o \
     $(OUTPUT)/src/main.o \
-    $(OUTPUT)/asm/sched.o \
+    $(OUTPUT)/src/sched.o \
     $(OUTPUT)/asm/control.o \
     $(OUTPUT)/asm/game1.o \
     $(OUTPUT)/asm/control2.o \
@@ -227,7 +227,7 @@ OBJECTS := \
     $(OUTPUT)/src/libultra/audio/reverb.o \
     $(OUTPUT)/src/libultra/libc/ldiv.o \
     $(OUTPUT)/data/src/main.data.o \
-    $(OUTPUT)/data/asm/sched.data.o \
+    $(OUTPUT)/data/src/sched.data.o \
     $(OUTPUT)/data/asm/control.data.o \
     $(OUTPUT)/data/asm/game1.data.o \
     $(OUTPUT)/data/asm/control2.data.o \
@@ -258,7 +258,6 @@ OBJECTS := \
     $(OUTPUT)/data/asm/menues.data.o \
     $(OUTPUT)/data/asm/global.data.o \
     $(OUTPUT)/data/asm/libultra/os/exceptasm.data.o \
-    $(OUTPUT)/data/asm/sched.rodata.o \
     $(OUTPUT)/data/asm/control.rodata.o \
     $(OUTPUT)/data/asm/game1.rodata.o \
     $(OUTPUT)/data/asm/control2.rodata.o \
