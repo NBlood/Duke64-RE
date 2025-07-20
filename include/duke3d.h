@@ -329,16 +329,27 @@ struct player_struct
 
 extern unsigned char tempbuf[2048], packbuf[576];
 
-#define spriteqamount 64
+#define impact_damage 10
 #define max_player_health 100
+#define max_armour_amount 0
+#define respawnactortime 768
+#define respawnitemtime 768
+#define dukefriction 53200
 #define gc 176
-#define tripbombblastradius 3880
+#define rpgblastradius 1780
 #define pipebombblastradius 2500
+#define shrinkerblastradius 680
+#define tripbombblastradius 3880
+#define morterblastradius 2500
+#define bouncemineblastradius 2500
 #define seenineblastradius 2048
+#define camerashitable 0
+#define numfreezebounces 3
+#define freezerhurtowner 1
+#define spriteqamount 64
+#define lasermode 0
 
-extern long max_armour_amount,max_ammo_amount[MAX_WEAPONS];
-
-extern long impact_damage,respawnactortime,respawnitemtime;
+extern long max_ammo_amount[MAX_WEAPONS];
 
 #define MOVFIFOSIZ 256
 
@@ -420,10 +431,9 @@ extern char myjumpingtoggle, myonground, myhardlanding,myreturntocenter;
 extern short weaponsandammosprites[15];
 
 extern short frags[MAXPLAYERS][MAXPLAYERS];
-extern long cameradist, cameraclock, dukefriction;
+extern long cameradist, cameraclock;
 
-extern char pus,pub,camerashitable,freezerhurtowner,lasermode;
-extern long numfreezebounces,rpgblastradius,shrinkerblastradius,morterblastradius,bouncemineblastradius;
+extern char pus,pub;
 extern char everyothertime;
 
 extern long numinterpolations, startofdynamicinterpolations;

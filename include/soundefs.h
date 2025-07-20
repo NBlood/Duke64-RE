@@ -848,11 +848,11 @@ Prepared for public release: 03/21/2003 - Charlie Wiederhold, 3D Realms
 #define CHAINGUN_FIRE                    6
 #define RPG_SHOOT                        7
 #define POOLBALLHIT                      8
-#define RPG_EXPLODE                      9
+#define RPG_EXPLODE                      8
 #define CAT_FIRE                        10
 #define SHRINKER_FIRE                   11
 #define ACTOR_SHRINKING                 12
-#define PIPEBOMB_BOUNCE                 13
+#define PIPEBOMB_BOUNCE                 11
 #define PIPEBOMB_EXPLODE                12
 #define LASERTRIP_ONWALL                15
 #define LASERTRIP_ARMING                14
@@ -872,7 +872,7 @@ Prepared for public release: 03/21/2003 - Charlie Wiederhold, 3D Realms
 #define ENDSEQVOL3SND3                  30
 #define DUKE_PASSWIND                   32
 #define DUKE_CRACK                      33
-#define SLIM_ATTACK                     34
+#define SLIM_ATTACK                     27
 #define SOMETHINGHITFORCE               35
 #define DUKE_DRINKING                   36
 #define DUKE_KILLED1                    37
@@ -963,10 +963,10 @@ Prepared for public release: 03/21/2003 - Charlie Wiederhold, 3D Realms
 #define PIG_ATTACK                     122
 #define PIG_PAIN                       123
 #define PIG_DYING                      124
-#define RECO_ROAM                      125
-#define RECO_RECOG                     126
-#define RECO_ATTACK                    127
-#define RECO_PAIN                      128
+#define RECO_ROAM                       96
+#define RECO_RECOG                      97
+#define RECO_ATTACK                     98
+#define RECO_PAIN                       99
 #define RECO_DYING                     129
 #define DRON_ROAM                      130
 #define DRON_RECOG                     131
@@ -987,7 +987,7 @@ Prepared for public release: 03/21/2003 - Charlie Wiederhold, 3D Realms
 #define TURR_RECOG                     146
 #define TURR_ATTACK                    147
 #define DUMPSTER_MOVE                  148
-#define SLIM_DYING                     149
+#define SLIM_DYING                     116
 #define BOS3_ROAM                      150
 #define BOS3_RECOG                     151
 #define BOS3_ATTACK1                   152
@@ -1001,7 +1001,7 @@ Prepared for public release: 03/21/2003 - Charlie Wiederhold, 3D Realms
 #define WIERDSHOT_FLY                  160
 #define TURR_PAIN                      161
 #define TURR_DYING                     162
-#define SLIM_ROAM                      163
+#define SLIM_ROAM                      127
 #define LADY_SCREAM                    164
 #define DOOR_OPERATE2                  165
 #define DOOR_OPERATE3                  166
@@ -1047,7 +1047,7 @@ Prepared for public release: 03/21/2003 - Charlie Wiederhold, 3D Realms
 #define DUKE_SEARCH2                   207
 #define DUKE_CRACK2                    208
 #define DUKE_SEARCH                    209
-#define DUKE_GET                       210
+#define DUKE_GET                       167
 #define DUKE_LONGTERM_PAIN             168
 #define MONITOR_ACTIVE                 212
 #define NITEVISION_ONOFF               213
@@ -1069,7 +1069,7 @@ Prepared for public release: 03/21/2003 - Charlie Wiederhold, 3D Realms
 #define DUKE_GOTHEALTHATLOW            229
 #define BOSSTALKTODUKE                 230
 #define WAR_AMBIENCE1                  231
-#define WAR_AMBIENCE2                  232
+#define WAR_AMBIENCE2                  186
 #define WAR_AMBIENCE3                  233
 #define WAR_AMBIENCE4                  234
 #define WAR_AMBIENCE5                  235
@@ -1084,7 +1084,7 @@ Prepared for public release: 03/21/2003 - Charlie Wiederhold, 3D Realms
 #define FLY_BY                         244
 #define DUKE_SCREAM                    245
 #define SHRINKER_HIT                   246
-#define RATTY                          247
+#define RATTY                          198
 #define INTO_MENU                      248
 #define BONUSMUSIC                     249
 #define DUKE_BOOBY                     250

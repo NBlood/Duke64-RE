@@ -219,6 +219,9 @@ void updatesector(long x, long y, short *sectnum);
 void rotatepoint(long xpivot, long ypivot, long x, long y, short daang, long *x2, long *y2);
 int krand();
 int krand2();
+void getzrange(long x, long y, long z, short sectnum,
+			 long *ceilz, long *ceilhit, long *florz, long *florhit,
+			 long walldist, unsigned long cliptype);
 int getceilzofslope(short sectnum, long dax, long day);
 int getflorzofslope(short sectnum, long dax, long day);
 void getzsofslope(short sectnum, long dax, long day, long *ceilz, long *florz);
@@ -233,6 +236,11 @@ int getpicanm(unsigned short picnum);
 
 void adjustceilingpanning(unsigned short, short, short);
 void adjustfloorpanning(unsigned short, short, short);
+
+
+void ms_update(unsigned short, unsigned short, int, int);
+void addexplosionmodel(short, short, short, char);
+void addexplosionmodel2(short, short, short, char);
 
 
 /*************************************************************************

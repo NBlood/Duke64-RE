@@ -91,7 +91,7 @@ segments:
       - [0x273F0, c, src/cache1d]
       - [0x27BC0, asm, asm/display2]
       - [0x2AF50, c, src/actors1]
-      - [0x392F0, asm, asm/actors2]
+      - [0x392F0, c, src/actors2]
       - [0x3D4E0, asm, asm/actors3]
       - [0x3F3E0, asm, asm/gamedef]
  #     - [auto, asm, script]
@@ -304,7 +304,7 @@ segments:
       - [0xA43E0, .data, src/cache1d]
       - [0xA4400, data, asm/display2]
       - [0xA44C0, .data, src/actors1]
-      - [0xA44E0, data, asm/actors2]
+      - [0xA44E0, .data, src/actors2]
       - [0xA44F0, data, asm/actors3]
       - [0xA4500, data, asm/script]
       - [0xB5200, data, src/engine]
@@ -352,7 +352,7 @@ segments:
       - [0xBAD90, .rodata, src/cache1d]
       - [0xBAE00, rodata, asm/display2]
       - [0xBAF00, .rodata, src/actors1]
-      - [0xBB510, rodata, asm/actors2]
+      - [0xBB510, .rodata, src/actors2]
       - [0xBB5A0, rodata, asm/actors3]
       - [0xBB6D0, rodata, asm/gamedef]
       - [0xBBA50, rodata, asm/script]
@@ -402,7 +402,7 @@ segments:
       - { type: bss, vram: 0x8026ECB0, name: asm/draw }
       - { type: bss, vram: 0x8026ECC0, name: asm/rnc }
       - { type: .bss, vram: 0x8026EFE0, name: src/cache1d }
-      - { type: bss, vram: 0x80272300, name: src/actors1 }
+      - { type: .bss, vram: 0x80272300, name: src/actors1 }
       - { type: bss, vram: 0x80272310, name: asm/gamedef }
       - { type: bss, vram: 0x80272330, name: src/engine }
       - { type: bss, vram: 0x80279740, name: asm/game4 }

@@ -787,7 +787,7 @@ void movecyclers(void)
 }
 
 
-extern short otherp;
+short otherp;
 void moveplayers(void) //Players
 {
     short i , nexti;

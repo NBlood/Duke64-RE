@@ -39,7 +39,7 @@ OBJECTS := \
     $(OUTPUT)/src/cache1d.o \
     $(OUTPUT)/asm/display2.o \
     $(OUTPUT)/src/actors1.o \
-    $(OUTPUT)/asm/actors2.o \
+    $(OUTPUT)/src/actors2.o \
     $(OUTPUT)/asm/actors3.o \
     $(OUTPUT)/asm/gamedef.o \
     $(OUTPUT)/src/engine.o \
@@ -245,7 +245,7 @@ OBJECTS := \
     $(OUTPUT)/data/src/cache1d.data.o \
     $(OUTPUT)/data/asm/display2.data.o \
     $(OUTPUT)/data/src/actors1.data.o \
-    $(OUTPUT)/data/asm/actors2.data.o \
+    $(OUTPUT)/data/src/actors2.data.o \
     $(OUTPUT)/data/asm/actors3.data.o \
     $(OUTPUT)/data/asm/script.data.o \
     $(OUTPUT)/data/src/engine.data.o \
@@ -270,7 +270,6 @@ OBJECTS := \
     $(OUTPUT)/data/asm/getangle.rodata.o \
     $(OUTPUT)/data/asm/draw.rodata.o \
     $(OUTPUT)/data/asm/display2.rodata.o \
-    $(OUTPUT)/data/asm/actors2.rodata.o \
     $(OUTPUT)/data/asm/actors3.rodata.o \
     $(OUTPUT)/data/asm/gamedef.rodata.o \
     $(OUTPUT)/data/asm/script.rodata.o \

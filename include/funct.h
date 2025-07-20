@@ -36,6 +36,10 @@ extern void operatemasterswitches(short low);
 extern void operateforcefields(short s,short low);
 //#line "sector.c" 1515
 extern void activatebysector(short sect,short j);
+//#line "sector.c" 1532
+extern void checkhitwall(short spr,short dawallnum,long x,long y,long z,short atwith);
+//#line "sector.c" 1891
+extern void checkhitsprite(short i,short sn);
 
 //#line "player.c" 59
 extern void quickkill(struct player_struct *p);
@@ -140,7 +144,3 @@ extern void moveeffectors(void );
 extern void moveactors(void );
 //#line "actors.c" 6005
 extern void moveexplosions(void );
-
-
-void ms_update(unsigned short, unsigned short, int, int);
-

@@ -1999,7 +1999,7 @@ int krand()
 	return(((unsigned long)randomseed)>>16);
 }
 
-int getzrange(long x, long y, long z, short sectnum,
+void getzrange(long x, long y, long z, short sectnum,
 			 long *ceilz, long *ceilhit, long *florz, long *florhit,
 			 long walldist, unsigned long cliptype)
 {
