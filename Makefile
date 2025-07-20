@@ -5,7 +5,7 @@ ASFLAGS := -mips3 -march vr4300 -I include
 OBJCOPY := mips-linux-gnu-objcopy
 LD := mips-linux-gnu-ld
 CC := ido-static-recomp-main/build/5.3/out/cc
-OPT_FLAGS := -O2 -mips2
+OPT_FLAGS := -O2 -mips2 -Olimit 2000
 $(OUTPUT)/src/libultra/io/%.o: OPT_FLAGS := -O1 -mips2
 $(OUTPUT)/src/libultra/os/%.o: OPT_FLAGS := -O1 -mips2
 $(OUTPUT)/src/libultra/libc/%.o: OPT_FLAGS := -O3 -mips2
@@ -38,7 +38,7 @@ OBJECTS := \
     $(OUTPUT)/asm/display1.o \
     $(OUTPUT)/src/cache1d.o \
     $(OUTPUT)/asm/display2.o \
-    $(OUTPUT)/asm/actors1.o \
+    $(OUTPUT)/src/actors1.o \
     $(OUTPUT)/asm/actors2.o \
     $(OUTPUT)/asm/actors3.o \
     $(OUTPUT)/asm/gamedef.o \
@@ -244,7 +244,7 @@ OBJECTS := \
     $(OUTPUT)/data/asm/display1.data.o \
     $(OUTPUT)/data/src/cache1d.data.o \
     $(OUTPUT)/data/asm/display2.data.o \
-    $(OUTPUT)/data/asm/actors1.data.o \
+    $(OUTPUT)/data/src/actors1.data.o \
     $(OUTPUT)/data/asm/actors2.data.o \
     $(OUTPUT)/data/asm/actors3.data.o \
     $(OUTPUT)/data/asm/script.data.o \
@@ -270,7 +270,6 @@ OBJECTS := \
     $(OUTPUT)/data/asm/getangle.rodata.o \
     $(OUTPUT)/data/asm/draw.rodata.o \
     $(OUTPUT)/data/asm/display2.rodata.o \
-    $(OUTPUT)/data/asm/actors1.rodata.o \
     $(OUTPUT)/data/asm/actors2.rodata.o \
     $(OUTPUT)/data/asm/actors3.rodata.o \
     $(OUTPUT)/data/asm/gamedef.rodata.o \
@@ -302,7 +301,7 @@ OBJECTS := \
     $(OUTPUT)/data/asm/draw.bss.o \
     $(OUTPUT)/data/asm/rnc.bss.o \
     $(OUTPUT)/data/src/cache1d.bss.o \
-    $(OUTPUT)/data/asm/actors1.bss.o \
+    $(OUTPUT)/data/src/actors1.bss.o \
     $(OUTPUT)/data/asm/gamedef.bss.o \
     $(OUTPUT)/data/src/engine.bss.o \
     $(OUTPUT)/data/asm/game4.bss.o \

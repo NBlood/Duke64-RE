@@ -94,8 +94,6 @@ extern char palettes[1];
 extern char palettes_rom[1];
 extern char palettes_rom_end[1];
 
-OSMesgQueue *func_8004C654(OSSched*);
-
 void osCreateScheduler2(OSSched* sc, void* stack, OSPri priority,
 	u8 numFields);
 
@@ -303,7 +301,6 @@ void setupgfx(void)
 	func_8004B7D4();
 }
 
-#if 1
 void creategfxtask(void)
 {
 	OSScTask* task;
@@ -333,11 +330,8 @@ void creategfxtask(void)
 	task->msg = &D_800D36D0;
 	task->framebuffer = (void*)(&D_80000400 + (framecounter * 0x25800));
 	osWritebackDCacheAll();
-	osSendMesg(func_8004C654(&scheduler), task, OS_MESG_BLOCK);
+	osSendMesg(osScGetCmdQ(&scheduler), task, OS_MESG_BLOCK);
 }
-#else
-#pragma GLOBAL_ASM("nonmatchings/src/main/creategfxtask.s")
-#endif
 
 void updatetime(void)
 {

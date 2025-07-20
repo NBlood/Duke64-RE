@@ -206,7 +206,7 @@ int lintersect(long x1, long y1, long z1, long x2, long y2, long z2, long x3,
 			  long y3, long x4, long y4, long *intx, long *inty, long *intz);
 int rintersect(long x1, long y1, long z1, long vx, long vy, long vz, long x3,
 			  long y3, long x4, long y4, long *intx, long *inty, long *intz);
-int dragpoint(short pointhighlight, long dax, long day);
+void dragpoint(short pointhighlight, long dax, long day);
 short lastwall(short point);
 int clipmove(long *x, long *y, long *z, short *sectnum,
 			 long xvect, long yvect,
@@ -218,6 +218,7 @@ int pushmove(long *x, long *y, long *z, short *sectnum,
 void updatesector(long x, long y, short *sectnum);
 void rotatepoint(long xpivot, long ypivot, long x, long y, short daang, long *x2, long *y2);
 int krand();
+int krand2();
 int getceilzofslope(short sectnum, long dax, long day);
 int getflorzofslope(short sectnum, long dax, long day);
 void getzsofslope(short sectnum, long dax, long day, long *ceilz, long *florz);
@@ -229,6 +230,9 @@ int FindDistance3D(int x, int y, int z);
 int gettilesizx(unsigned short picnum);
 int gettilesizy(unsigned short picnum);
 int getpicanm(unsigned short picnum);
+
+void adjustceilingpanning(unsigned short, short, short);
+void adjustfloorpanning(unsigned short, short, short);
 
 
 /*************************************************************************

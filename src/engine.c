@@ -1365,7 +1365,7 @@ int rintersect(long x1, long y1, long z1, long vx, long vy, long vz, long x3,
 	return(1);
 }
 
-int dragpoint(short pointhighlight, long dax, long day)
+void dragpoint(short pointhighlight, long dax, long day)
 {
 	short cnt, tempshort;
 
