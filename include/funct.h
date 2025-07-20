@@ -38,6 +38,8 @@ extern void operateforcefields(short s,short low);
 extern void activatebysector(short sect,short j);
 //#line "sector.c" 1532
 extern void checkhitwall(short spr,short dawallnum,long x,long y,long z,short atwith);
+//#line "sector.c" 1816
+extern char checkhitceiling(short sn);
 //#line "sector.c" 1891
 extern void checkhitsprite(short i,short sn);
 

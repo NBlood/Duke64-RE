@@ -841,7 +841,7 @@ Prepared for public release: 03/21/2003 - Charlie Wiederhold, 3D Realms
 
 #define KICK_HIT                         0
 #define PISTOL_RICOCHET                  1
-#define PISTOL_BODYHIT                   2
+#define PISTOL_BODYHIT                   1
 #define PISTOL_FIRE                      3
 #define EJECT_CLIP                       4
 #define INSERT_CLIP                      4
@@ -998,7 +998,7 @@ Prepared for public release: 03/21/2003 - Charlie Wiederhold, 3D Realms
 #define DRON_ATTACK2                   157
 #define THUD                           158
 #define OCTA_ATTACK2                   159
-#define WIERDSHOT_FLY                  160
+#define WIERDSHOT_FLY                  126
 #define TURR_PAIN                      161
 #define TURR_DYING                     162
 #define SLIM_ROAM                      127
@@ -1083,7 +1083,7 @@ Prepared for public release: 03/21/2003 - Charlie Wiederhold, 3D Realms
 #define EXITMENUSOUND                  243
 #define FLY_BY                         244
 #define DUKE_SCREAM                    245
-#define SHRINKER_HIT                   246
+#define SHRINKER_HIT                   197
 #define RATTY                          198
 #define INTO_MENU                      248
 #define BONUSMUSIC                     249
@@ -1234,4 +1234,5 @@ Prepared for public release: 03/21/2003 - Charlie Wiederhold, 3D Realms
 #define SMACKIT                        394
 #define BELLSND                        395
 #define SND260                         260
+#define SND271                         271
 // MAXIMUM NUMBER OF SOUNDS: 450 ( 0-449 )

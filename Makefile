@@ -40,7 +40,7 @@ OBJECTS := \
     $(OUTPUT)/asm/display2.o \
     $(OUTPUT)/src/actors1.o \
     $(OUTPUT)/src/actors2.o \
-    $(OUTPUT)/asm/actors3.o \
+    $(OUTPUT)/src/actors3.o \
     $(OUTPUT)/asm/gamedef.o \
     $(OUTPUT)/src/engine.o \
     $(OUTPUT)/asm/game3.o \
@@ -226,8 +226,6 @@ OBJECTS := \
     $(OUTPUT)/src/libultra/audio/filter.o \
     $(OUTPUT)/src/libultra/audio/reverb.o \
     $(OUTPUT)/src/libultra/libc/ldiv.o \
-    $(OUTPUT)/data/src/main.data.o \
-    $(OUTPUT)/data/src/sched.data.o \
     $(OUTPUT)/data/asm/control.data.o \
     $(OUTPUT)/data/asm/game1.data.o \
     $(OUTPUT)/data/asm/control2.data.o \
@@ -242,11 +240,8 @@ OBJECTS := \
     $(OUTPUT)/data/asm/draw.data.o \
     $(OUTPUT)/data/asm/tileinfo.data.o \
     $(OUTPUT)/data/asm/display1.data.o \
-    $(OUTPUT)/data/src/cache1d.data.o \
     $(OUTPUT)/data/asm/display2.data.o \
-    $(OUTPUT)/data/src/actors1.data.o \
-    $(OUTPUT)/data/src/actors2.data.o \
-    $(OUTPUT)/data/asm/actors3.data.o \
+    $(OUTPUT)/data/src/actors3.data.o \
     $(OUTPUT)/data/asm/script.data.o \
     $(OUTPUT)/data/src/engine.data.o \
     $(OUTPUT)/data/asm/game3.data.o \
@@ -270,7 +265,6 @@ OBJECTS := \
     $(OUTPUT)/data/asm/getangle.rodata.o \
     $(OUTPUT)/data/asm/draw.rodata.o \
     $(OUTPUT)/data/asm/display2.rodata.o \
-    $(OUTPUT)/data/asm/actors3.rodata.o \
     $(OUTPUT)/data/asm/gamedef.rodata.o \
     $(OUTPUT)/data/asm/script.rodata.o \
     $(OUTPUT)/data/asm/game3.rodata.o \
@@ -285,10 +279,6 @@ OBJECTS := \
     $(OUTPUT)/data/asm/libultra/os/setintmask.rodata.o \
     $(OUTPUT)/data/asm/libultra/os/exceptasm.rodata.o \
     $(OUTPUT)/data/asm/libultra/gu/libm_vals.rodata.o \
-    $(OUTPUT)/data/asm/libultra/libc/xldtob.rodata.o \
-    $(OUTPUT)/data/asm/libultra/audio/seq.rodata.o \
-    $(OUTPUT)/data/asm/libultra/audio/reverb.rodata.o \
-    $(OUTPUT)/data/src/main.bss.o \
     $(OUTPUT)/data/asm/control.bss.o \
     $(OUTPUT)/data/asm/game1.bss.o \
     $(OUTPUT)/data/asm/control2.bss.o \
@@ -299,8 +289,6 @@ OBJECTS := \
     $(OUTPUT)/data/asm/rend2.bss.o \
     $(OUTPUT)/data/asm/draw.bss.o \
     $(OUTPUT)/data/asm/rnc.bss.o \
-    $(OUTPUT)/data/src/cache1d.bss.o \
-    $(OUTPUT)/data/src/actors1.bss.o \
     $(OUTPUT)/data/asm/gamedef.bss.o \
     $(OUTPUT)/data/src/engine.bss.o \
     $(OUTPUT)/data/asm/game4.bss.o \
@@ -309,7 +297,6 @@ OBJECTS := \
     $(OUTPUT)/data/asm/menues.bss.o \
     $(OUTPUT)/data/asm/global.bss.o \
     $(OUTPUT)/data/asm/global2.bss.o \
-    $(OUTPUT)/data/asm/libultra/io/leointerrupt.bss.o \
     $(OUTPUT)/assets/palette.o \
     $(OUTPUT)/src/dlstatic.o \
     $(OUTPUT)/assets/tileblob.o \
