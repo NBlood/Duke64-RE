@@ -41,14 +41,14 @@ OBJECTS := \
     $(OUTPUT)/src/actors1.o \
     $(OUTPUT)/src/actors2.o \
     $(OUTPUT)/src/actors3.o \
-    $(OUTPUT)/asm/gamedef.o \
+    $(OUTPUT)/src/gamedef.o \
     $(OUTPUT)/src/engine.o \
     $(OUTPUT)/asm/game3.o \
     $(OUTPUT)/asm/game4.o \
-    $(OUTPUT)/asm/player1.o \
-    $(OUTPUT)/asm/player2.o \
-    $(OUTPUT)/asm/player3.o \
-    $(OUTPUT)/asm/premap.o \
+    $(OUTPUT)/src/player1.o \
+    $(OUTPUT)/src/player2.o \
+    $(OUTPUT)/src/player3.o \
+    $(OUTPUT)/src/premap.o \
     $(OUTPUT)/asm/sector.o \
     $(OUTPUT)/asm/board.o \
     $(OUTPUT)/asm/tile.o \
@@ -245,8 +245,6 @@ OBJECTS := \
     $(OUTPUT)/data/asm/script.data.o \
     $(OUTPUT)/data/src/engine.data.o \
     $(OUTPUT)/data/asm/game3.data.o \
-    $(OUTPUT)/data/asm/player1.data.o \
-    $(OUTPUT)/data/asm/player3.data.o \
     $(OUTPUT)/data/asm/sector.data.o \
     $(OUTPUT)/data/asm/tables.data.o \
     $(OUTPUT)/data/asm/dukebot.data.o \
@@ -265,14 +263,9 @@ OBJECTS := \
     $(OUTPUT)/data/asm/getangle.rodata.o \
     $(OUTPUT)/data/asm/draw.rodata.o \
     $(OUTPUT)/data/asm/display2.rodata.o \
-    $(OUTPUT)/data/asm/gamedef.rodata.o \
     $(OUTPUT)/data/asm/script.rodata.o \
     $(OUTPUT)/data/asm/game3.rodata.o \
     $(OUTPUT)/data/asm/game4.rodata.o \
-    $(OUTPUT)/data/asm/player1.rodata.o \
-    $(OUTPUT)/data/asm/player2.rodata.o \
-    $(OUTPUT)/data/asm/player3.rodata.o \
-    $(OUTPUT)/data/asm/premap.rodata.o \
     $(OUTPUT)/data/asm/sector.rodata.o \
     $(OUTPUT)/data/asm/board.rodata.o \
     $(OUTPUT)/data/asm/menues.rodata.o \
@@ -289,10 +282,8 @@ OBJECTS := \
     $(OUTPUT)/data/asm/rend2.bss.o \
     $(OUTPUT)/data/asm/draw.bss.o \
     $(OUTPUT)/data/asm/rnc.bss.o \
-    $(OUTPUT)/data/asm/gamedef.bss.o \
     $(OUTPUT)/data/src/engine.bss.o \
     $(OUTPUT)/data/asm/game4.bss.o \
-    $(OUTPUT)/data/asm/player1.bss.o \
     $(OUTPUT)/data/asm/dukebot.bss.o \
     $(OUTPUT)/data/asm/menues.bss.o \
     $(OUTPUT)/data/asm/global.bss.o \

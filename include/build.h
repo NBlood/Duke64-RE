@@ -242,6 +242,7 @@ void ms_update(unsigned short, unsigned short, int, int);
 void addexplosionmodel(short, short, short, char);
 void addexplosionmodel2(short, short, short, char);
 
+float getanglef(float, float);
 
 /*************************************************************************
 POSITION VARIABLES:

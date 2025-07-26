@@ -31,6 +31,10 @@ Prepared for public release: 03/21/2003 - Charlie Wiederhold, 3D Realms
 #include "names.h"
 #include "soundefs.h"
 
+#ifndef NULL
+#define NULL 0
+#endif
+
 #define max(a, b) ((a) > (b) ? (a) : (b))
 #define min(a, b) ((a) < (b) ? (a) : (b))
 
@@ -113,10 +117,10 @@ typedef int int32;
 
 #define MAXANIMWALLS 512
 #define MAXINTERPOLATIONS 1024
-#define NUMOFFIRSTTIMEACTIVE 192
+#define NUMOFFIRSTTIMEACTIVE 131
 
 #define MAXCYCLERS 256
-#define MAXSCRIPTSIZE 20460
+#define MAXSCRIPTSIZE 13473
 #define MAXANIMATES 64
 
 #define SP  sprite[i].yvel
@@ -204,6 +208,7 @@ typedef struct
 {
     short i;
     int voice;
+    int f_8;
 } SOUNDOWNER;
 
 typedef struct
@@ -321,7 +326,9 @@ struct player_struct
     char max_secret_rooms,secret_rooms,/*fire_flag,*/pals[3];
     char max_actors_killed,actors_killed,return_to_center;
 
-    short f_36e, f_370, f_372, f_374, f_376, f_378;
+    char f_36d;
+    char f_36e;
+    short f_370, f_372, f_374, f_376, f_378;
 
     long fricxv, fricyv;
     char crosshair, autoaim, left_right_handed;
@@ -356,13 +363,13 @@ extern long max_ammo_amount[MAX_WEAPONS];
 
 extern short spriteq[1024],spriteqloc;
 extern struct player_struct ps[MAXPLAYERS];
-extern struct player_orig po[MAXPLAYERS];
+extern struct player_orig po[20];
 extern struct user_defs ud;
 extern short int global_random;
 extern long scaredfallz;
 extern char buf[80]; //My own generic input buffer
 
-extern char fta_quotes[NUMOFFIRSTTIMEACTIVE][64];
+extern char *fta_quotes[NUMOFFIRSTTIMEACTIVE];
 
 extern SAMPLE Sound[ NUM_SOUNDS ];
 extern int32 VoiceToggle,AmbienceToggle;
@@ -373,7 +380,8 @@ extern char sounds[NUM_SOUNDS][14];
 
 extern long script[MAXSCRIPTSIZE],*scriptptr,*insptr,*labelcode,labelcnt;
 extern char *label,*textptr,error,warning,killit_flag;
-extern long *actorscrptr[MAXTILES],*parsing_actor;
+extern short actorscrptr[MAXTILES];
+extern long *parsing_actor;
 extern char actortype[MAXTILES];
 
 extern char ipath[80],opath[80];
@@ -396,6 +404,8 @@ struct weaponhit
 
 extern struct weaponhit hittype[MAXSPRITES];
 
+extern input loc;
+
 extern short numplayers, myconnectindex;
 extern short connecthead, connectpoint2[MAXPLAYERS];   //Player linked list variables (indeces, not connection numbers)
 extern short screenpeek;
@@ -412,6 +422,7 @@ extern long animatevel[MAXANIMATES];
 extern short neartagsector, neartagwall, neartagsprite;
 extern long neartaghitdist;
 extern short animatesect[MAXANIMATES];
+extern long vel,svel,angvel,horiz;
 
 extern short mirrorwall[64], mirrorsector[64], mirrorcnt;
 
@@ -443,5 +454,33 @@ extern long bakipos[MAXINTERPOLATIONS];
 extern long *curipos[MAXINTERPOLATIONS];
 
 extern char dukematch_mode;
+extern char death_fade;
+
+extern float viewhorizang;
+
+extern unsigned short buttonheld, button_mode;
+
+typedef struct {
+    int jump, crouch, fire, aim_up, aim_down, prev_weapon, next_weapon;
+    int inv_left, inv_right, open, inventory, forward, backward;
+    int strafe_left, strafe_right, buttonmode;
+} controlmap_t;
+
+extern volatile unsigned short control_button[4];
+extern volatile short control_stickx[4];
+extern volatile short control_sticky[4];
+extern controlmap_t controlmap[4];
+extern unsigned short demo_button;
+extern short demo_stickx;
+extern short demo_sticky;
+extern short stickx;
+extern short sticky;
+extern signed char game_inactive;
+
+extern short D_801C94D8[4];
+
+extern char do_restart;
+extern short levelnum;
+extern short menu_levelnum;
 
 #include "funct.h"

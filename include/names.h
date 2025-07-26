@@ -454,6 +454,7 @@ Prepared for public release: 03/21/2003 - Charlie Wiederhold, 3D Realms
 #define EXPLOSION2 1890
 #define COMMANDER 1920
 #define COMMANDERSTAYPUT 1921
+#define TILE1957 1957
 #define RECON 1960
 #define TANK 1975
 #define PIGCOP 2000
@@ -591,9 +592,11 @@ Prepared for public release: 03/21/2003 - Charlie Wiederhold, 3D Realms
 #define BOSS1STAYPUT 2631
 #define BOSS1SHOOT 2660
 #define BOSS1LOB 2670
+#define TILE2685 2685
 #define BOSSTOP 2696
 #define BOSS2 2710
 #define BOSS3 2760
+#define TILE2809 2809
 #define SPINNINGNUKEICON 2813
 #define BIGFNTCURSOR 2820
 #define SMALLFNTCURSOR 2821
@@ -654,6 +657,7 @@ Prepared for public release: 03/21/2003 - Charlie Wiederhold, 3D Realms
 #define W_MILKSHELF 4181
 #define W_MILKSHELFBROKE 4203
 #define PURPLELAVA 4240
+#define TILE4250 4250
 #define LAVABUBBLE 4340
 #define DUKECUTOUT 4352
 #define TARGET 4359
@@ -749,6 +753,7 @@ Prepared for public release: 03/21/2003 - Charlie Wiederhold, 3D Realms
 #define MAN2 4872
 #define WOMAN 4874
 #define PLEASEWAIT 4887
+#define TILE4689 4689
 #define NATURALLIGHTNING 4890
 #define WEATHERWARN 4893
 #define DUKETAG 4900
