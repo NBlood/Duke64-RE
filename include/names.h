@@ -40,13 +40,13 @@ Prepared for public release: 03/21/2003 - Charlie Wiederhold, 3D Realms
 #define ARROW 20
 #define FIRSTGUNSPRITE 21
 #define CHAINGUNSPRITE 22
-#define RPGSPRITE 23
+#define DEVISTATORSPRITE 23
 #define FREEZESPRITE 24
 #define SHRINKERSPRITE 25
 #define HEAVYHBOMB 26
 #define TRIPBOMBSPRITE 27
 #define SHOTGUNSPRITE 28
-#define DEVISTATORSPRITE 29
+#define RPGSPRITE 29
 #define HEALTHBOX 30
 #define AMMOBOX 31
 #define GROWSPRITEICON 32
@@ -54,8 +54,8 @@ Prepared for public release: 03/21/2003 - Charlie Wiederhold, 3D Realms
 #define FREEZEAMMO 37
 #define AMMO 40
 #define BATTERYAMMO 41
-#define DEVISTATORAMMO 42
-#define RPGAMMO 44
+#define RPGAMMO 42
+#define DEVISTATORAMMO 44
 #define GROWAMMO 45
 #define CRYSTALAMMO 46
 #define HBOMBAMMO 47
@@ -627,8 +627,10 @@ Prepared for public release: 03/21/2003 - Charlie Wiederhold, 3D Realms
 #define BORNTOBEWILDSCREEN 3370
 #define BLIMP 3400
 #define FEM9 3450
+#define TILE3627 3627
 #define TILE3634 3634
 #define FOOTPRINT 3701
+#define TILE3727 3727
 #define TILE3841 3841
 #define TILE3845 3845
 #define TILE3953 3953

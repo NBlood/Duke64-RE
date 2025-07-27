@@ -102,11 +102,11 @@ segments:
       - [0x5C2F0, c, src/player2]
       - [0x5F950, c, src/player3]
       - [0x60A50, c, src/premap]
-      - [0x62500, asm, asm/sector]
+      - [0x62500, c, src/sector]
       - [0x6A880, asm, asm/board]
       - [0x6AA50, asm, asm/tile]
  #     - [auto, asm, tables]
-      - [0x6AB40, asm, asm/dukebot]
+      - [0x6AB40, c, src/dukebot]
       - [0x6D2A0, asm, asm/menues]
  #     - [auto, asm, global]
       - [0x706E0, c, src/libultra/io/viblack]
@@ -307,13 +307,13 @@ segments:
       - [0xA44E0, .data, src/actors2]
       - [0xA44F0, .data, src/actors3]
       - [0xA4500, data, asm/script]
-      - [0xB5200, data, src/engine]
+      - [0xB5200, .data, src/engine]
       - [0xB5210, data, asm/game3]
       - [0xB5220, .data, src/player1]
       - [0xB5240, .data, src/premap]
-      - [0xB5250, data, asm/sector]
+      - [0xB5250, .data, src/sector]
       - [0xB5260, data, asm/tables]
-      - [0xB6C60, data, asm/dukebot]
+      - [0xB6C60, .data, src/dukebot]
       - [0xB6EA0, data, asm/menues]
       - [0xB6F70, data, asm/global]
       - [0xB6FA0, .data, src/libultra/os/initialize]
@@ -362,8 +362,9 @@ segments:
       - [0xBDD30, .rodata, src/player2]
       - [0xBDE30, .rodata, src/player3]
       - [0xBDEC0, .rodata, src/premap]
-      - [0xBE110, rodata, asm/sector]
+      - [0xBE110, .rodata, src/sector]
       - [0xBEDF0, rodata, asm/board]
+      - [0xBEE10, .rodata, src/dukebot]
       - [0xBEF00, rodata, asm/menues]
       - [0xBF490, rodata, asm/libultra/os/setintmask]
       - [0xBF510, .rodata, src/libultra/gu/rotate]
@@ -404,10 +405,10 @@ segments:
       - { type: .bss, vram: 0x8026EFE0, name: src/cache1d }
       - { type: .bss, vram: 0x80272300, name: src/actors1 }
       - { type: .bss, vram: 0x80272310, name: src/gamedef }
-      - { type: bss, vram: 0x80272330, name: src/engine }
+      - { type: .bss, vram: 0x80272330, name: src/engine }
       - { type: bss, vram: 0x80279740, name: asm/game4 }
       - { type: .bss, vram: 0x80279750, name: src/player1 }
-      - { type: bss, vram: 0x80279770, name: asm/dukebot }
+      - { type: .bss, vram: 0x80279770, name: src/dukebot }
       - { type: bss, vram: 0x8027A2A0, name: asm/menues }
       - { type: bss, vram: 0x8027A3C0, name: asm/global }
       - { type: bss, vram: 0x802AAC80, name: asm/global2 }

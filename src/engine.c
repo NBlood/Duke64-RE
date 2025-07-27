@@ -9,15 +9,21 @@
 #define MAXCLIPNUM 512
 #define MAXCLIPDIST 1024
 
-extern short editstatus;
-extern long rxi[8], ryi[8];
-extern short clipnum, hitwalls[4];
+short editstatus = 0;
+int spritecount = 0;
+
+short headspritesect[MAXSECTORS+1], headspritestat[MAXSTATUS+1];
+short prevspritesect[MAXSPRITES], prevspritestat[MAXSPRITES];
+short nextspritesect[MAXSPRITES], nextspritestat[MAXSPRITES];
+long rxi[8], ryi[8];
+short D_80276F20;
+short clipnum, hitwalls[4];
 
 typedef struct { long x1, y1, x2, y2; } linetype;
-extern linetype clipit[MAXCLIPNUM];
-extern short clipsectorlist[MAXCLIPNUM], clipsectnum;
-extern short clipobjectval[MAXCLIPNUM];
-extern long totalclocklock;
+linetype clipit[MAXCLIPNUM];
+short clipsectorlist[MAXCLIPNUM], clipsectnum;
+short clipobjectval[MAXCLIPNUM];
+long totalclocklock;
 
 int mulscale(long long a, long long b, long long c)
 {
@@ -506,8 +512,6 @@ int ksgn(int a) {
     }
     return 1;
 }
-
-extern short D_80276F20;
 
 void initengine()
 {
@@ -1432,8 +1436,7 @@ short lastwall(short point)
 	clipnum++;                                            \
 }                                                        \
 
-//long clipmoveboxtracenum = 3;
-extern long clipmoveboxtracenum;
+long clipmoveboxtracenum = 3;
 int clipmove (long *x, long *y, long *z, short *sectnum,
 			 long xvect, long yvect,
 			 long walldist, long ceildist, long flordist, unsigned long cliptype)

@@ -32,8 +32,14 @@ extern long dist(spritetype *s1,spritetype *s2);
 extern short findplayer(spritetype *s,long *d);
 //#line "sector.c" 214
 extern short findotherplayer(short p,long *d);
+//#line "sector.c" 240
+extern void doanimations(void );
 //#line "sector.c" 301
 extern int getanimationgoal(long *animptr);
+//#line "sector.c" 315
+extern int setanimation(short animsect,long *animptr,long thegoal,long thevel);
+//#line "sector.c" 369
+extern void animatewalls(void );
 //#line "sector.c" 457
 extern char activatewarpelevators(short s,short d);
 //#line "sector.c" 504
@@ -60,6 +66,10 @@ extern char checkhitceiling(short sn);
 extern void checkhitsprite(short i,short sn);
 //#line "sector.c" 2326
 extern void allignwarpelevators(void );
+//#line "sector.c" 2357
+extern void cheatkeys(short snum);
+//#line "sector.c" 2766
+extern void checksectors(short snum);
 
 //#line "premap.c" 58
 extern void pickrandomspot(short snum);
@@ -124,6 +134,8 @@ extern void execute(short i,short p,long x);
 extern void check_fta_sounds(short i);
 //#line "game.c" 886
 extern short badguy(spritetype *s);
+//#line "game.c" 924
+extern short badguypic(short pn);
 //#line "game.c" 869
 extern short inventory(spritetype *s);
 //#line "game.c" 1654
@@ -138,8 +150,14 @@ extern short EGS(short whatsect,long s_x,long s_y,long s_z,short s_pn,signed cha
 extern char wallswitchcheck(short i);
 //#line "game.c" 2588
 extern short spawn(short j,short pn);
+//#line "game.c" 7882
+extern void lotsofglass(short i,short wallnum,short n);
 //#line "game.c" 7924
 extern void spriteglass(short i, short n);
+//#line "game.c" 7937
+extern void ceilingglass(short i,short sectnum,short n);
+//#line "game.c" 7966
+extern void lotsofcolourglass(short i,short wallnum,short n);
 
 //#line "actors.c" 7
 extern void updateinterpolations(void);
@@ -227,4 +245,5 @@ void loadgame(void);
 void func_8005B5F0(int);
 void func_80059398(int, signed char);
 void resetsbarscroll(void);
+void clearbufbyte(unsigned int, unsigned int, unsigned int);
 

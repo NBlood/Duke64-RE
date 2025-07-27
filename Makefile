@@ -49,10 +49,10 @@ OBJECTS := \
     $(OUTPUT)/src/player2.o \
     $(OUTPUT)/src/player3.o \
     $(OUTPUT)/src/premap.o \
-    $(OUTPUT)/asm/sector.o \
+    $(OUTPUT)/src/sector.o \
     $(OUTPUT)/asm/board.o \
     $(OUTPUT)/asm/tile.o \
-    $(OUTPUT)/asm/dukebot.o \
+    $(OUTPUT)/src/dukebot.o \
     $(OUTPUT)/asm/menues.o \
     $(OUTPUT)/src/libultra/io/viblack.o \
     $(OUTPUT)/src/libultra/os/initialize.o \
@@ -243,11 +243,10 @@ OBJECTS := \
     $(OUTPUT)/data/asm/display2.data.o \
     $(OUTPUT)/data/src/actors3.data.o \
     $(OUTPUT)/data/asm/script.data.o \
-    $(OUTPUT)/data/src/engine.data.o \
     $(OUTPUT)/data/asm/game3.data.o \
-    $(OUTPUT)/data/asm/sector.data.o \
+    $(OUTPUT)/data/src/sector.data.o \
     $(OUTPUT)/data/asm/tables.data.o \
-    $(OUTPUT)/data/asm/dukebot.data.o \
+    $(OUTPUT)/data/src/dukebot.data.o \
     $(OUTPUT)/data/asm/menues.data.o \
     $(OUTPUT)/data/asm/global.data.o \
     $(OUTPUT)/data/asm/libultra/os/exceptasm.data.o \
@@ -266,7 +265,6 @@ OBJECTS := \
     $(OUTPUT)/data/asm/script.rodata.o \
     $(OUTPUT)/data/asm/game3.rodata.o \
     $(OUTPUT)/data/asm/game4.rodata.o \
-    $(OUTPUT)/data/asm/sector.rodata.o \
     $(OUTPUT)/data/asm/board.rodata.o \
     $(OUTPUT)/data/asm/menues.rodata.o \
     $(OUTPUT)/data/asm/libultra/os/setintmask.rodata.o \
@@ -284,7 +282,7 @@ OBJECTS := \
     $(OUTPUT)/data/asm/rnc.bss.o \
     $(OUTPUT)/data/src/engine.bss.o \
     $(OUTPUT)/data/asm/game4.bss.o \
-    $(OUTPUT)/data/asm/dukebot.bss.o \
+    $(OUTPUT)/data/src/dukebot.bss.o \
     $(OUTPUT)/data/asm/menues.bss.o \
     $(OUTPUT)/data/asm/global.bss.o \
     $(OUTPUT)/data/asm/global2.bss.o \
