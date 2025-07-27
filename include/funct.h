@@ -138,8 +138,10 @@ extern short badguy(spritetype *s);
 extern short badguypic(short pn);
 //#line "game.c" 869
 extern short inventory(spritetype *s);
+//#line "game.c" 1607
+extern void operatefta(void);
 //#line "game.c" 1654
-extern void FTA(short q, struct player_struct* p);
+extern void FTA(short q,struct player_struct *p);
 //#line "game.c" 1705
 extern void gameexit(char *t);
 //#line "game.c" 2445
@@ -150,6 +152,10 @@ extern short EGS(short whatsect,long s_x,long s_y,long s_z,short s_pn,signed cha
 extern char wallswitchcheck(short i);
 //#line "game.c" 2588
 extern short spawn(short j,short pn);
+//#line "game.c" 4181
+extern void animatesprites(long x,long y,short a,long smoothratio,int spr,spritetype *t);
+//#line "game.c" 7247
+extern char domovethings(void );
 //#line "game.c" 7882
 extern void lotsofglass(short i,short wallnum,short n);
 //#line "game.c" 7924
@@ -247,3 +253,8 @@ void func_80059398(int, signed char);
 void resetsbarscroll(void);
 void clearbufbyte(unsigned int, unsigned int, unsigned int);
 
+void gametext(short, short, char *);
+void setrotatespriteflags(short, short, short, short);
+void computerinput(long snum, input *syn);
+void fastmemcpy(void*, void*, unsigned long);
+int func_80099488(char* s);

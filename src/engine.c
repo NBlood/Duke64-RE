@@ -695,14 +695,14 @@ void initspritelists()
 	nextspritestat[MAXSPRITES-1] = -1;
 }
 
-int insertsprite(short sectnum, short statnum)
+short insertsprite(short sectnum, short statnum)
 {
 	insertspritestat(statnum);
 	spritecount++;
 	return(insertspritesect(sectnum));
 }
 
-int insertspritesect(short sectnum)
+short insertspritesect(short sectnum)
 {
 	short blanktouse;
 
@@ -726,7 +726,7 @@ int insertspritesect(short sectnum)
 	return(blanktouse);
 }
 
-int insertspritestat(short statnum)
+short insertspritestat(short statnum)
 {
 	short blanktouse;
 

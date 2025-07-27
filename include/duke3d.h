@@ -26,6 +26,9 @@ Prepared for public release: 03/21/2003 - Charlie Wiederhold, 3D Realms
 */
 //-------------------------------------------------------------------------
 
+#include "os.h"
+#include "mbi.h"
+#include "gbi.h"
 #include "pragmas.h"
 #include "build.h"
 #include "names.h"
@@ -482,5 +485,13 @@ extern short D_801C94D8[4];
 extern char do_restart;
 extern short levelnum;
 extern short menu_levelnum;
+
+extern Gfx* pkt;
+extern signed char doinitrumble;
+extern signed char gamestate;
+extern char current_menu;
+extern char next_menu;
+extern short menu_inputfreeze;
+extern char splitscreenpeek;
 
 #include "funct.h"

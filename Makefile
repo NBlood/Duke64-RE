@@ -43,7 +43,7 @@ OBJECTS := \
     $(OUTPUT)/src/actors3.o \
     $(OUTPUT)/src/gamedef.o \
     $(OUTPUT)/src/engine.o \
-    $(OUTPUT)/asm/game3.o \
+    $(OUTPUT)/src/game3.o \
     $(OUTPUT)/asm/game4.o \
     $(OUTPUT)/src/player1.o \
     $(OUTPUT)/src/player2.o \
@@ -51,7 +51,7 @@ OBJECTS := \
     $(OUTPUT)/src/premap.o \
     $(OUTPUT)/src/sector.o \
     $(OUTPUT)/asm/board.o \
-    $(OUTPUT)/asm/tile.o \
+    $(OUTPUT)/src/tile.o \
     $(OUTPUT)/src/dukebot.o \
     $(OUTPUT)/asm/menues.o \
     $(OUTPUT)/src/libultra/io/viblack.o \
@@ -243,7 +243,7 @@ OBJECTS := \
     $(OUTPUT)/data/asm/display2.data.o \
     $(OUTPUT)/data/src/actors3.data.o \
     $(OUTPUT)/data/asm/script.data.o \
-    $(OUTPUT)/data/asm/game3.data.o \
+    $(OUTPUT)/data/src/game3.data.o \
     $(OUTPUT)/data/src/sector.data.o \
     $(OUTPUT)/data/asm/tables.data.o \
     $(OUTPUT)/data/src/dukebot.data.o \
@@ -263,7 +263,6 @@ OBJECTS := \
     $(OUTPUT)/data/asm/draw.rodata.o \
     $(OUTPUT)/data/asm/display2.rodata.o \
     $(OUTPUT)/data/asm/script.rodata.o \
-    $(OUTPUT)/data/asm/game3.rodata.o \
     $(OUTPUT)/data/asm/game4.rodata.o \
     $(OUTPUT)/data/asm/board.rodata.o \
     $(OUTPUT)/data/asm/menues.rodata.o \

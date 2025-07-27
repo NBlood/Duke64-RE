@@ -71,6 +71,8 @@ Prepared for public release: 03/21/2003 - Charlie Wiederhold, 3D Realms
 #define HEATSENSOR 59
 #define ACCESSCARD 60
 #define BOOTS 61
+#define TILE65 65
+#define TILE66 66
 #define MIRRORBROKE 70
 #define CLOUDYOCEAN 78
 #define CLOUDYSKIES 79
@@ -117,6 +119,10 @@ Prepared for public release: 03/21/2003 - Charlie Wiederhold, 3D Realms
 #define TECHSWITCH 166
 #define DIPSWITCH3 168
 #define ACCESSSWITCH2 170
+#define TILE172 172
+#define TILE174 174
+#define TILE176 176
+#define TILE178 178
 #define REFLECTWATERTILE 180
 #define FLOORSLIME 200
 #define BIGFORCE 230
@@ -631,8 +637,10 @@ Prepared for public release: 03/21/2003 - Charlie Wiederhold, 3D Realms
 #define TILE3634 3634
 #define FOOTPRINT 3701
 #define TILE3727 3727
+#define TILE3831 3831
 #define TILE3841 3841
 #define TILE3845 3845
+#define TILE3922 3922
 #define TILE3953 3953
 #define POOP 4094
 #define FRAMEEFFECT1 4095

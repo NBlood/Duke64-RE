@@ -116,6 +116,21 @@ typedef struct
 	char pad[1];
 } spritetype;
 
+typedef struct
+{
+	int romoff;
+	int waloff;
+	int picanm;
+	short tilesizx;
+	short tilesizy;
+	short memsiz;
+	short dim1;
+	short dim2;
+	short flags;
+	short tile;
+	short unk;
+} tileinfo_t;
+
 EXTERN sectortype sector[MAXSECTORS];
 EXTERN walltype wall[MAXWALLS];
 EXTERN spritetype sprite[MAXSPRITES];
@@ -179,6 +194,8 @@ EXTERN char automapping;
 EXTERN char gotpic[(MAXTILES+7)>>3];
 EXTERN char gotsector[(MAXSECTORS+7)>>3];
 
+extern tileinfo_t tileinfo[];
+
 void initengine();
 int clipinsidebox(long x, long y, short wallnum, long walldist);
 int clipinsideboxline(long x, long y, long x1, long y1, long x2, long y2, long walldist);
@@ -188,9 +205,9 @@ int ksqrt(long num);
 int setsprite(short spritenum, long newx, long newy, long newz);
 int animateoffs(short tilenum, short fakevar);
 void initspritelists();
-int insertsprite(short sectnum, short statnum);
-int insertspritestat(short statnum);
-int insertspritesect(short statnum);
+short insertsprite(short sectnum, short statnum);
+short insertspritestat(short statnum);
+short insertspritesect(short statnum);
 int deletesprite(short spritenum);
 int deletespritesect(short deleteme);
 int deletespritestat(short deleteme);
@@ -233,6 +250,7 @@ int FindDistance3D(int x, int y, int z);
 int gettilesizx(unsigned short picnum);
 int gettilesizy(unsigned short picnum);
 int getpicanm(unsigned short picnum);
+int gettileid(unsigned short picnum);
 
 void adjustceilingpanning(unsigned short, short, short);
 void adjustfloorpanning(unsigned short, short, short);
