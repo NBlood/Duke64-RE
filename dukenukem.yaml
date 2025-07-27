@@ -97,7 +97,7 @@ segments:
  #     - [auto, asm, script]
       - [0x45520, c, src/engine]
       - [0x4F060, c, src/game3]
-      - [0x52E40, asm, asm/game4]
+      - [0x52E40, c, src/game4]
       - [0x57180, c, src/player1]
       - [0x5C2F0, c, src/player2]
       - [0x5F950, c, src/player3]
@@ -357,7 +357,7 @@ segments:
       - [0xBB6D0, .rodata, src/gamedef]
       - [0xBBA50, rodata, asm/script]
       - [0xBC340, .rodata, src/game3]
-      - [0xBC8F0, rodata, asm/game4]
+      - [0xBC8F0, .rodata, src/game4]
       - [0xBDB80, .rodata, src/player1]
       - [0xBDD30, .rodata, src/player2]
       - [0xBDE30, .rodata, src/player3]
@@ -406,7 +406,7 @@ segments:
       - { type: .bss, vram: 0x80272300, name: src/actors1 }
       - { type: .bss, vram: 0x80272310, name: src/gamedef }
       - { type: .bss, vram: 0x80272330, name: src/engine }
-      - { type: bss, vram: 0x80279740, name: asm/game4 }
+      - { type: .bss, vram: 0x80279740, name: src/game4 }
       - { type: .bss, vram: 0x80279750, name: src/player1 }
       - { type: .bss, vram: 0x80279770, name: src/dukebot }
       - { type: bss, vram: 0x8027A2A0, name: asm/menues }

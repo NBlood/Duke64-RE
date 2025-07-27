@@ -44,7 +44,7 @@ OBJECTS := \
     $(OUTPUT)/src/gamedef.o \
     $(OUTPUT)/src/engine.o \
     $(OUTPUT)/src/game3.o \
-    $(OUTPUT)/asm/game4.o \
+    $(OUTPUT)/src/game4.o \
     $(OUTPUT)/src/player1.o \
     $(OUTPUT)/src/player2.o \
     $(OUTPUT)/src/player3.o \
@@ -263,7 +263,6 @@ OBJECTS := \
     $(OUTPUT)/data/asm/draw.rodata.o \
     $(OUTPUT)/data/asm/display2.rodata.o \
     $(OUTPUT)/data/asm/script.rodata.o \
-    $(OUTPUT)/data/asm/game4.rodata.o \
     $(OUTPUT)/data/asm/board.rodata.o \
     $(OUTPUT)/data/asm/menues.rodata.o \
     $(OUTPUT)/data/asm/libultra/os/setintmask.rodata.o \
@@ -280,7 +279,6 @@ OBJECTS := \
     $(OUTPUT)/data/asm/draw.bss.o \
     $(OUTPUT)/data/asm/rnc.bss.o \
     $(OUTPUT)/data/src/engine.bss.o \
-    $(OUTPUT)/data/asm/game4.bss.o \
     $(OUTPUT)/data/src/dukebot.bss.o \
     $(OUTPUT)/data/asm/menues.bss.o \
     $(OUTPUT)/data/asm/global.bss.o \

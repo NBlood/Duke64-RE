@@ -186,8 +186,8 @@ Prepared for public release: 03/21/2003 - Charlie Wiederhold, 3D Realms
 #define ELEVATOR_ON                     46
 #define DUKE_KILLED3                    47
 #define ELEVATOR_OFF                    48
-#define DOOR_OPERATE1                   74
-#define SUBWAY                          75
+#define DOOR_OPERATE1                   49
+#define SUBWAY                          50
 #define SWITCH_ON                       51
 #define FAN                             77
 #define DUKE_GETWEAPON3                 78
