@@ -51,7 +51,7 @@ OBJECTS := \
     $(OUTPUT)/src/player3.o \
     $(OUTPUT)/src/premap.o \
     $(OUTPUT)/src/sector.o \
-    $(OUTPUT)/asm/board.o \
+    $(OUTPUT)/src/board.o \
     $(OUTPUT)/src/tile.o \
     $(OUTPUT)/src/dukebot.o \
     $(OUTPUT)/asm/menues.o \
@@ -257,7 +257,6 @@ OBJECTS := \
     $(OUTPUT)/data/asm/rend2.rodata.o \
     $(OUTPUT)/data/asm/draw.rodata.o \
     $(OUTPUT)/data/asm/display2.rodata.o \
-    $(OUTPUT)/data/asm/board.rodata.o \
     $(OUTPUT)/data/asm/menues.rodata.o \
     $(OUTPUT)/data/asm/libultra/os/setintmask.rodata.o \
     $(OUTPUT)/data/asm/libultra/os/exceptasm.rodata.o \

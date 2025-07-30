@@ -259,3 +259,4 @@ void computerinput(long snum, input *syn);
 void fastmemcpy(void*, void*, unsigned long);
 int func_80099488(char* s);
 void ms_add(unsigned short, int, int);
+void func_8005B728();
