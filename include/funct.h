@@ -241,7 +241,7 @@ extern void moveexplosions(void );
 
 float sinf(float);
 float cosf(float);
-float getanglef(float, float);
+float getanglef(float dy, float dx);
 void controllersetvib(char, unsigned short, char);
 void demoinput(void);
 void FX_StopSound(int);

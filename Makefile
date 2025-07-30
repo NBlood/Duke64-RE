@@ -32,7 +32,7 @@ OBJECTS := \
     $(OUTPUT)/asm/sound2.o \
     $(OUTPUT)/asm/rend1.o \
     $(OUTPUT)/asm/rend2.o \
-    $(OUTPUT)/asm/getangle.o \
+    $(OUTPUT)/src/getangle.o \
     $(OUTPUT)/asm/draw.o \
     $(OUTPUT)/asm/rnc.o \
     $(OUTPUT)/asm/display1.o \
@@ -237,16 +237,12 @@ OBJECTS := \
     $(OUTPUT)/data/asm/sound2.data.o \
     $(OUTPUT)/data/asm/rend1.data.o \
     $(OUTPUT)/data/asm/rend2.data.o \
-    $(OUTPUT)/data/asm/getangle.data.o \
     $(OUTPUT)/data/asm/draw.data.o \
     $(OUTPUT)/data/asm/tileinfo.data.o \
     $(OUTPUT)/data/asm/display1.data.o \
     $(OUTPUT)/data/asm/display2.data.o \
-    $(OUTPUT)/data/src/actors3.data.o \
     $(OUTPUT)/data/src/game3.data.o \
-    $(OUTPUT)/data/src/sector.data.o \
     $(OUTPUT)/data/asm/tables.data.o \
-    $(OUTPUT)/data/src/dukebot.data.o \
     $(OUTPUT)/data/asm/menues.data.o \
     $(OUTPUT)/data/asm/global.data.o \
     $(OUTPUT)/data/asm/libultra/os/exceptasm.data.o \
@@ -259,7 +255,6 @@ OBJECTS := \
     $(OUTPUT)/data/asm/sound1.rodata.o \
     $(OUTPUT)/data/asm/rend1.rodata.o \
     $(OUTPUT)/data/asm/rend2.rodata.o \
-    $(OUTPUT)/data/asm/getangle.rodata.o \
     $(OUTPUT)/data/asm/draw.rodata.o \
     $(OUTPUT)/data/asm/display2.rodata.o \
     $(OUTPUT)/data/asm/board.rodata.o \
@@ -277,8 +272,6 @@ OBJECTS := \
     $(OUTPUT)/data/asm/rend2.bss.o \
     $(OUTPUT)/data/asm/draw.bss.o \
     $(OUTPUT)/data/asm/rnc.bss.o \
-    $(OUTPUT)/data/src/engine.bss.o \
-    $(OUTPUT)/data/src/dukebot.bss.o \
     $(OUTPUT)/data/asm/menues.bss.o \
     $(OUTPUT)/data/asm/global.bss.o \
     $(OUTPUT)/data/asm/global2.bss.o \
