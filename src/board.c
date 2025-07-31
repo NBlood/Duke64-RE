@@ -37,15 +37,8 @@ void loadefs(void)
 
     ud.fta_on = 1;
 
-    /*FAKEMATCH*/
-    i = 0;
-    do
-    {
-        ps[0].autoaim = autoaim;
-        ps[1].autoaim = autoaim;
-        ps[2].autoaim = autoaim;
-        ps[3].autoaim = autoaim;
-    } while (0);
+    for (i = 0; i < MAXPLAYERS; i++)
+        ps[i].autoaim = autoaim;
 
     max_ammo_amount[PISTOL_WEAPON] = 192;
     max_ammo_amount[SHOTGUN_WEAPON] = 50;
