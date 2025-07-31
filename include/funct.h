@@ -138,6 +138,8 @@ extern short badguy(spritetype *s);
 extern short badguypic(short pn);
 //#line "game.c" 869
 extern short inventory(spritetype *s);
+//#line "game.c" 976
+extern void myospal(long x,long y,short tilenum,signed char shade,char orientation,char p);
 //#line "game.c" 1607
 extern void operatefta(void);
 //#line "game.c" 1654
@@ -260,3 +262,8 @@ void fastmemcpy(void*, void*, unsigned long);
 int func_80099488(char* s);
 void ms_add(unsigned short, int, int);
 void func_8005B728();
+void rotatesprite(float, float, float, float, int, int);
+void rotatespritesc(float, float, float, float, int, int);
+void rendertileworld(float, float, float, float, int, int);
+void setfxcolor(char, char, char, char, char, char);
+void unsetfxsprite(void);

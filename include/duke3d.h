@@ -494,4 +494,6 @@ extern char next_menu;
 extern short menu_inputfreeze;
 extern char splitscreenpeek;
 
+extern char colortable[14][6];
+
 #include "funct.h"

@@ -37,7 +37,7 @@ OBJECTS := \
     $(OUTPUT)/asm/rnc.o \
     $(OUTPUT)/asm/display1.o \
     $(OUTPUT)/src/cache1d.o \
-    $(OUTPUT)/asm/display2.o \
+    $(OUTPUT)/src/display2.o \
     $(OUTPUT)/src/actors1.o \
     $(OUTPUT)/src/actors2.o \
     $(OUTPUT)/src/actors3.o \
@@ -240,7 +240,6 @@ OBJECTS := \
     $(OUTPUT)/data/asm/draw.data.o \
     $(OUTPUT)/data/asm/tileinfo.data.o \
     $(OUTPUT)/data/asm/display1.data.o \
-    $(OUTPUT)/data/asm/display2.data.o \
     $(OUTPUT)/data/src/game3.data.o \
     $(OUTPUT)/data/asm/tables.data.o \
     $(OUTPUT)/data/asm/menues.data.o \
@@ -256,7 +255,6 @@ OBJECTS := \
     $(OUTPUT)/data/asm/rend1.rodata.o \
     $(OUTPUT)/data/asm/rend2.rodata.o \
     $(OUTPUT)/data/asm/draw.rodata.o \
-    $(OUTPUT)/data/asm/display2.rodata.o \
     $(OUTPUT)/data/asm/menues.rodata.o \
     $(OUTPUT)/data/asm/libultra/os/setintmask.rodata.o \
     $(OUTPUT)/data/asm/libultra/os/exceptasm.rodata.o \
