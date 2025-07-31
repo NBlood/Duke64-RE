@@ -9,6 +9,8 @@
 #define MAXCLIPNUM 512
 #define MAXCLIPDIST 1024
 
+char unkdata[0x30] = { 0 };
+
 short editstatus = 0;
 int spritecount = 0;
 

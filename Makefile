@@ -42,6 +42,7 @@ OBJECTS := \
     $(OUTPUT)/src/actors2.o \
     $(OUTPUT)/src/actors3.o \
     $(OUTPUT)/src/gamedef.o \
+    $(OUTPUT)/src/script.o \
     $(OUTPUT)/src/engine.o \
     $(OUTPUT)/src/game3.o \
     $(OUTPUT)/src/game4.o \
@@ -242,7 +243,6 @@ OBJECTS := \
     $(OUTPUT)/data/asm/display1.data.o \
     $(OUTPUT)/data/asm/display2.data.o \
     $(OUTPUT)/data/src/actors3.data.o \
-    $(OUTPUT)/data/asm/script.data.o \
     $(OUTPUT)/data/src/game3.data.o \
     $(OUTPUT)/data/src/sector.data.o \
     $(OUTPUT)/data/asm/tables.data.o \
@@ -262,7 +262,6 @@ OBJECTS := \
     $(OUTPUT)/data/asm/getangle.rodata.o \
     $(OUTPUT)/data/asm/draw.rodata.o \
     $(OUTPUT)/data/asm/display2.rodata.o \
-    $(OUTPUT)/data/asm/script.rodata.o \
     $(OUTPUT)/data/asm/board.rodata.o \
     $(OUTPUT)/data/asm/menues.rodata.o \
     $(OUTPUT)/data/asm/libultra/os/setintmask.rodata.o \

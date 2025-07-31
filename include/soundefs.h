@@ -136,15 +136,15 @@ Prepared for public release: 03/21/2003 - Charlie Wiederhold, 3D Realms
 #define GLASS_HEAVYBREAK                18
 #define SHORT_CIRCUIT                   19
 #define ITEM_SPLASH                     20
-#define DUKE_BREATHING                  23
-#define DUKE_EXHALING                   24
+// #define DUKE_BREATHING                  23
+// #define DUKE_EXHALING                   24
 #define DUKE_GASP                       21
 #define SLIM_RECOG                      22
 // #define ENDSEQVOL3SND1                  27
 #define DUKE_URINATE                    23
-#define ENDSEQVOL3SND2                  29
-#define ENDSEQVOL3SND3                  30
-#define DUKE_PASSWIND                   32
+#define ENDSEQVOL3SND2                  24
+#define ENDSEQVOL3SND3                  25
+// #define DUKE_PASSWIND                   32
 #define DUKE_CRACK                      26
 #define SLIM_ATTACK                     27
 #define SOMETHINGHITFORCE               28
@@ -164,23 +164,23 @@ Prepared for public release: 03/21/2003 - Charlie Wiederhold, 3D Realms
 #define DUKE_JETPACK_ON                 38
 #define DUKE_JETPACK_IDLE               39
 #define DUKE_JETPACK_OFF                40
-#define LIZTROOP_GROWL                  52
-#define LIZTROOP_TALK1                  53
-#define LIZTROOP_TALK2                  54
-#define LIZTROOP_TALK3                  55
-#define DUKETALKTOBOSS                  56
-#define LIZCAPT_GROWL                   57
-#define LIZCAPT_TALK1                   58
-#define LIZCAPT_TALK2                   59
-#define LIZCAPT_TALK3                   60
-#define LIZARD_BEG                      61
-#define LIZARD_PAIN                     62
-#define LIZARD_DEATH                    63
-#define LIZARD_SPIT                     64
-#define DRONE1_HISSRATTLE               65
-#define DRONE1_HISSSCREECH              66
-#define DUKE_TIP2                       67
-#define FLESH_BURNING                   68
+// #define LIZTROOP_GROWL                  52
+// #define LIZTROOP_TALK1                  53
+// #define LIZTROOP_TALK2                  54
+// #define LIZTROOP_TALK3                  55
+// #define DUKETALKTOBOSS                  56
+// #define LIZCAPT_GROWL                   57
+// #define LIZCAPT_TALK1                   58
+// #define LIZCAPT_TALK2                   59
+// #define LIZCAPT_TALK3                   60
+#define LIZARD_BEG                      41
+// #define LIZARD_PAIN                     62
+// #define LIZARD_DEATH                    63
+#define LIZARD_SPIT                     42
+// #define DRONE1_HISSRATTLE               65
+// #define DRONE1_HISSSCREECH              66
+// #define DUKE_TIP2                       67
+#define FLESH_BURNING                   43
 #define SQUISHED                        44
 #define TELEPORTER                      45
 #define ELEVATOR_ON                     46
@@ -189,60 +189,60 @@ Prepared for public release: 03/21/2003 - Charlie Wiederhold, 3D Realms
 #define DOOR_OPERATE1                   49
 #define SUBWAY                          50
 #define SWITCH_ON                       51
-#define FAN                             77
-#define DUKE_GETWEAPON3                 78
+// #define FAN                             77
+#define DUKE_GETWEAPON3                 52
 #define FLUSH_TOILET                    53
 //#define HOVER_CRAFT                     80
 #define EARTHQUAKE                      54
-#define INTRUDER_ALERT                  82
+#define INTRUDER_ALERT                  55
 #define END_OF_LEVEL_WARN               56
-#define ENGINE_OPERATING                84
-#define REACTOR_ON                      85
-#define COMPUTER_AMBIENCE               86
-#define GEARS_GRINDING                  87
-#define BUBBLE_AMBIENCE                 88
-#define MACHINE_AMBIENCE                89
-#define SEWER_AMBIENCE                  90
-#define WIND_AMBIENCE                   91
+#define ENGINE_OPERATING                57
+#define REACTOR_ON                      58
+#define COMPUTER_AMBIENCE               59
+#define GEARS_GRINDING                  60
+#define BUBBLE_AMBIENCE                 61
+#define MACHINE_AMBIENCE                62
+#define SEWER_AMBIENCE                  63
+#define WIND_AMBIENCE                   64
 #define SOMETHING_DRIPPING              65
-#define STEAM_HISSING                   93
-#define THEATER_BREATH                  94
-#define BAR_MUSIC                       95
-#define BOS1_ROAM                       96
+#define STEAM_HISSING                   66
+// #define THEATER_BREATH                  94
+// #define BAR_MUSIC                       95
+#define BOS1_ROAM                       67
 #define BOS1_RECOG                      68
-#define BOS1_ATTACK1                    98
-#define BOS1_PAIN                       99
-#define BOS1_DYING                     100
-#define BOS2_ROAM                      101
-#define BOS2_RECOG                     102
-#define BOS2_ATTACK                    103
-#define BOS2_PAIN                      104
-#define BOS2_DYING                     105
-#define GETATOMICHEALTH                106
-#define DUKE_GETWEAPON2                107
-#define BOS3_DYING                     108
+#define BOS1_ATTACK1                    69
+#define BOS1_PAIN                       70
+#define BOS1_DYING                      71
+#define BOS2_ROAM                       72
+#define BOS2_RECOG                      73
+#define BOS2_ATTACK                     74
+#define BOS2_PAIN                       75
+#define BOS2_DYING                      76
+#define GETATOMICHEALTH                 77
+#define DUKE_GETWEAPON2                 78
+#define BOS3_DYING                      79
 #define SHOTGUN_FIRE                    80
 #define PRED_ROAM                       81
 #define PRED_RECOG                      82
-#define PRED_ATTACK                    112
-#define PRED_PAIN                      113
-#define PRED_DYING                     114
-#define CAPT_ROAM                      115
-#define CAPT_ATTACK                    116
+#define PRED_ATTACK                     83
+#define PRED_PAIN                       84
+#define PRED_DYING                      85
+#define CAPT_ROAM                       86
+#define CAPT_ATTACK                     87
 #define CAPT_RECOG                      88
-#define CAPT_PAIN                      118
-#define CAPT_DYING                     119
-#define PIG_ROAM                       120
+#define CAPT_PAIN                       89
+#define CAPT_DYING                      90
+#define PIG_ROAM                        91
 #define PIG_RECOG                       92
-#define PIG_ATTACK                     122
-#define PIG_PAIN                       123
-#define PIG_DYING                      124
+#define PIG_ATTACK                      93
+#define PIG_PAIN                        94
+#define PIG_DYING                       95
 #define RECO_ROAM                       96
 #define RECO_RECOG                      97
 #define RECO_ATTACK                     98
 #define RECO_PAIN                       99
-#define RECO_DYING                     129
-#define DRON_ROAM                      130
+#define RECO_DYING                     100
+// #define DRON_ROAM                      130
 #define DRON_RECOG                     101
 #define DRON_ATTACK1                   102
 #define DRON_PAIN                      103
@@ -254,70 +254,70 @@ Prepared for public release: 03/21/2003 - Charlie Wiederhold, 3D Realms
 #define COMM_DYING                     109
 #define OCTA_ROAM                      110
 #define OCTA_RECOG                     111
-#define OCTA_ATTACK1                   142
-#define OCTA_PAIN                      143
-#define OCTA_DYING                     144
-#define TURR_ROAM                      145
-#define TURR_RECOG                     146
-#define TURR_ATTACK                    147
-#define DUMPSTER_MOVE                  148
+#define OCTA_ATTACK1                   112
+#define OCTA_PAIN                      113
+#define OCTA_DYING                     114
+// #define TURR_ROAM                      145
+// #define TURR_RECOG                     146
+// #define TURR_ATTACK                    147
+#define DUMPSTER_MOVE                  115
 #define SLIM_DYING                     116
-#define BOS3_ROAM                      150
+#define BOS3_ROAM                      117
 #define BOS3_RECOG                     118
-#define BOS3_ATTACK1                   152
-#define BOS3_PAIN                      153
-#define BOS1_ATTACK2                   154
-#define COMM_SPIN                      155
-#define BOS1_WALK                      156
-#define DRON_ATTACK2                   157
+// #define BOS3_ATTACK1                   152
+#define BOS3_PAIN                      119
+#define BOS1_ATTACK2                   120
+#define COMM_SPIN                      121
+#define BOS1_WALK                      122
+#define DRON_ATTACK2                   123
 #define THUD                           124
 #define OCTA_ATTACK2                   125
 #define WIERDSHOT_FLY                  126
-#define TURR_PAIN                      161
-#define TURR_DYING                     162
+// #define TURR_PAIN                      161
+// #define TURR_DYING                     162
 #define SLIM_ROAM                      127
-#define LADY_SCREAM                    164
-#define DOOR_OPERATE2                  165
-#define DOOR_OPERATE3                  166
-#define DOOR_OPERATE4                  167
-#define BORNTOBEWILDSND                168
+// #define LADY_SCREAM                    164
+#define DOOR_OPERATE2                  128
+#define DOOR_OPERATE3                  129
+#define DOOR_OPERATE4                  130
+// #define BORNTOBEWILDSND                168
 #define SHOTGUN_COCK                   131
-#define GENERIC_AMBIENCE1              170
-#define GENERIC_AMBIENCE2              171
-#define GENERIC_AMBIENCE3              172
-#define GENERIC_AMBIENCE4              173
-#define GENERIC_AMBIENCE5              174
-#define GENERIC_AMBIENCE6              175
-#define BOS3_ATTACK2                   176
-#define GENERIC_AMBIENCE17             177
-#define GENERIC_AMBIENCE18             178
-#define GENERIC_AMBIENCE19             179
-#define GENERIC_AMBIENCE20             180
-#define GENERIC_AMBIENCE21             181
-#define GENERIC_AMBIENCE22             182
-#define SECRETLEVELSND                 183
-#define GENERIC_AMBIENCE8              184
-#define GENERIC_AMBIENCE9              185
-#define GENERIC_AMBIENCE10             186
-#define GENERIC_AMBIENCE11             187
-#define GENERIC_AMBIENCE12             188
-#define GENERIC_AMBIENCE13             189
-#define GENERIC_AMBIENCE14             190
-#define GENERIC_AMBIENCE15             192
-#define GENERIC_AMBIENCE16             193
-#define FIRE_CRACKLE                   194
-#define BONUS_SPEECH1                  195
-#define BONUS_SPEECH2                  196
-#define BONUS_SPEECH3                  197
-#define PIG_CAPTURE_DUKE               198
-#define BONUS_SPEECH4                  199
+#define GENERIC_AMBIENCE1              132
+#define GENERIC_AMBIENCE2              133
+#define GENERIC_AMBIENCE3              134
+#define GENERIC_AMBIENCE4              135
+#define GENERIC_AMBIENCE5              136
+#define GENERIC_AMBIENCE6              137
+// #define BOS3_ATTACK2                   176
+#define GENERIC_AMBIENCE17             138
+#define GENERIC_AMBIENCE18             139
+#define GENERIC_AMBIENCE19             140
+#define GENERIC_AMBIENCE20             141
+#define GENERIC_AMBIENCE21             142
+// #define GENERIC_AMBIENCE22             182
+#define SECRETLEVELSND                 143
+#define GENERIC_AMBIENCE8              144
+#define GENERIC_AMBIENCE9              145
+#define GENERIC_AMBIENCE10             146
+#define GENERIC_AMBIENCE11             147
+#define GENERIC_AMBIENCE12             148
+#define GENERIC_AMBIENCE13             149
+// #define GENERIC_AMBIENCE14             190
+#define GENERIC_AMBIENCE15             150
+#define GENERIC_AMBIENCE16             151
+#define FIRE_CRACKLE                   152
+#define BONUS_SPEECH1                  153
+#define BONUS_SPEECH2                  154
+#define BONUS_SPEECH3                  155
+#define PIG_CAPTURE_DUKE               156
+#define BONUS_SPEECH4                  157
 #define DUKE_LAND_HURT                 158
-#define DUKE_HIT_STRIPPER1             201
-#define DUKE_TIP1                      202
-#define DUKE_KILLED2                   203
-#define PRED_ROAM2                     204
-#define PIG_ROAM2                      205
-#define DUKE_GETWEAPON1                206
+#define DUKE_HIT_STRIPPER1             159
+// #define DUKE_TIP1                      202
+#define DUKE_KILLED2                   160
+#define PRED_ROAM2                     161
+#define PIG_ROAM2                      162
+#define DUKE_GETWEAPON1                163
 #define DUKE_SEARCH2                   164
 #define DUKE_CRACK2                    165
 #define DUKE_SEARCH                    166
@@ -331,182 +331,184 @@ Prepared for public release: 03/21/2003 - Charlie Wiederhold, 3D Realms
 #define DUKE_TAKEPILLS                 174
 #define DUKE_PISSRELIEF                175
 #define SELECT_WEAPON                  176
-#define WATER_GURGLE                   220
-#define DUKE_GETWEAPON4                221
-#define JIBBED_ACTOR1                  222
-#define JIBBED_ACTOR2                  223
-#define JIBBED_ACTOR3                  224
-#define JIBBED_ACTOR4                  225
-#define JIBBED_ACTOR5                  226
-#define JIBBED_ACTOR6                  227
-#define JIBBED_ACTOR7                  228
+#define WATER_GURGLE                   177
+#define DUKE_GETWEAPON4                178
+#define JIBBED_ACTOR1                  179
+// #define JIBBED_ACTOR2                  223
+#define JIBBED_ACTOR3                  180
+// #define JIBBED_ACTOR4                  225
+#define JIBBED_ACTOR5                  181
+#define JIBBED_ACTOR6                  182
+#define JIBBED_ACTOR7                  183
 #define DUKE_GOTHEALTHATLOW            184
-#define BOSSTALKTODUKE                 230
-#define WAR_AMBIENCE1                  231
+// #define BOSSTALKTODUKE                 230
+#define WAR_AMBIENCE1                  185
 #define WAR_AMBIENCE2                  186
-#define WAR_AMBIENCE3                  233
-#define WAR_AMBIENCE4                  234
-#define WAR_AMBIENCE5                  235
-#define WAR_AMBIENCE6                  236
-#define WAR_AMBIENCE7                  237
-#define WAR_AMBIENCE8                  238
-#define WAR_AMBIENCE9                  239
-#define WAR_AMBIENCE10                 240
-#define ALIEN_TALK1                    241
-#define ALIEN_TALK2                    242
-#define EXITMENUSOUND                  243
-#define FLY_BY                         244
+#define WAR_AMBIENCE3                  187
+#define WAR_AMBIENCE4                  188
+#define WAR_AMBIENCE5                  189
+#define WAR_AMBIENCE6                  190
+#define WAR_AMBIENCE7                  191
+// #define WAR_AMBIENCE8                  238
+#define WAR_AMBIENCE9                  192
+#define WAR_AMBIENCE10                 193
+// #define ALIEN_TALK1                    241
+// #define ALIEN_TALK2                    242
+#define EXITMENUSOUND                  194
+#define FLY_BY                         195
 #define DUKE_SCREAM                    196
 #define SHRINKER_HIT                   197
 #define RATTY                          198
-#define INTO_MENU                      248
-#define BONUSMUSIC                     249
-#define DUKE_BOOBY                     250
-#define DUKE_TALKTOBOSSFALL            251
-#define DUKE_LOOKINTOMIRROR            252
-#define PIG_ROAM3                      253
-#define KILLME                         254
-#define DRON_JETSND                    255
-#define SPACE_DOOR1                    256
-#define SPACE_DOOR2                    257
-#define SPACE_DOOR3                    258
-#define SPACE_DOOR4                    259
-#define SPACE_DOOR5                    260
-#define ALIEN_ELEVATOR1                261
-#define VAULT_DOOR                     262
-#define JIBBED_ACTOR13                 263
-#define DUKE_GETWEAPON6                264
-#define JIBBED_ACTOR8                  265
-#define JIBBED_ACTOR9                  266
-#define JIBBED_ACTOR10                 267
-#define JIBBED_ACTOR11                 268
-#define JIBBED_ACTOR12                 269
-#define DUKE_KILLED4                   270
-#define DUKE_KILLED5                   271
+#define INTO_MENU                      199
+// #define BONUSMUSIC                     249
+#define DUKE_BOOBY                     200
+// #define DUKE_TALKTOBOSSFALL            251
+// #define DUKE_LOOKINTOMIRROR            252
+#define PIG_ROAM3                      201
+// #define KILLME                         254
+#define DRON_JETSND                    202
+#define SPACE_DOOR1                    203
+#define SPACE_DOOR2                    204
+#define SPACE_DOOR3                    205
+#define SPACE_DOOR4                    206
+#define SPACE_DOOR5                    207
+#define ALIEN_ELEVATOR1                208
+#define VAULT_DOOR                     209
+// #define JIBBED_ACTOR13                 263
+#define DUKE_GETWEAPON6                210
+// #define JIBBED_ACTOR8                  265
+// #define JIBBED_ACTOR9                  266
+// #define JIBBED_ACTOR10                 267
+#define JIBBED_ACTOR11                 211
+#define JIBBED_ACTOR12                 212
+#define DUKE_KILLED4                   213
+//#define DUKE_KILLED5                   271
 #define ALIEN_SWITCH1                  214
-#define DUKE_STEPONFECES               273
-#define DUKE_LONGTERM_PAIN2            274
-#define DUKE_LONGTERM_PAIN3            275
-#define DUKE_LONGTERM_PAIN4            276
-#define COMPANB2                       277
-#define KTIT                           278
-#define HELICOP_IDLE                   279
-#define STEPNIT                        280
-#define SPACE_AMBIENCE1                281
-#define SPACE_AMBIENCE2                282
-#define SLIM_HATCH                     283
-#define RIPHEADNECK                    284
-#define FOUNDJONES                     285
-#define ALIEN_DOOR1                    286
-#define ALIEN_DOOR2                    287
-#define ENDSEQVOL3SND4                 288
-#define ENDSEQVOL3SND5                 289
-#define ENDSEQVOL3SND6                 290
-#define ENDSEQVOL3SND7                 291
-#define ENDSEQVOL3SND8                 292
-#define ENDSEQVOL3SND9                 293
+//#define DUKE_STEPONFECES               273
+#define DUKE_LONGTERM_PAIN2            215
+#define DUKE_LONGTERM_PAIN3            216
+#define DUKE_LONGTERM_PAIN4            217
+#define COMPANB2                       218
+// #define KTIT                           278
+// #define HELICOP_IDLE                   279
+#define STEPNIT                        219
+#define SPACE_AMBIENCE1                220
+#define SPACE_AMBIENCE2                221
+#define SLIM_HATCH                     222
+// #define RIPHEADNECK                    284
+#define FOUNDJONES                     223
+#define ALIEN_DOOR1                    224
+#define ALIEN_DOOR2                    225
+// #define ENDSEQVOL3SND4                 288
+// #define ENDSEQVOL3SND5                 289
+// #define ENDSEQVOL3SND6                 290
+// #define ENDSEQVOL3SND7                 291
+// #define ENDSEQVOL3SND8                 292
+// #define ENDSEQVOL3SND9                 293
 #define WHIPYOURASS                    226
-#define ENDSEQVOL2SND1                 295
-#define ENDSEQVOL2SND2                 296
-#define ENDSEQVOL2SND3                 297
-#define ENDSEQVOL2SND4                 298
-#define ENDSEQVOL2SND5                 299
-#define ENDSEQVOL2SND6                 300
-#define ENDSEQVOL2SND7                 301
-#define GENERIC_AMBIENCE23             302
-#define SOMETHINGFROZE                 303
-#define DUKE_LONGTERM_PAIN5            304
-#define DUKE_LONGTERM_PAIN6            305
-#define DUKE_LONGTERM_PAIN7            306
-#define DUKE_LONGTERM_PAIN8            307
-#define WIND_REPEAT                    308
-#define MYENEMY_ROAM                   309
-#define MYENEMY_HURT                   310
-#define MYENEMY_DEAD                   311
-#define MYENEMY_SHOOT                  312
-#define STORE_MUSIC                    313
-#define STORE_MUSIC_BROKE              314
-#define ACTOR_GROWING                  315
-#define NEWBEAST_ROAM                  316
-#define NEWBEAST_RECOG                 317
-#define NEWBEAST_ATTACK                318
-#define NEWBEAST_PAIN                  319
-#define NEWBEAST_DYING                 320
-#define NEWBEAST_SPIT                  321
-#define VOL4_1                         322
-#define SUPERMARKET                    323
-#define MOUSEANNOY                     324
-#define BOOKEM                         325
-#define SUPERMARKETCRY                 326
-#define DESTRUCT                       327
-#define EATFOOD                        328
-#define MAKEMYDAY                      329
-#define WITNESSSTAND                   330
-#define VACATIONSPEECH                 331
-#define YIPPEE1                        332
-#define YOHOO1                         333
-#define YOHOO2                         334
-#define DOLPHINSND                     335
-#define TOUGHGALSND1                   336
-#define TOUGHGALSND2                   337
-#define TOUGHGALSND3                   338
-#define TOUGHGALSND4                   339
-#define TANK_ROAM                      340
-#define BOS4_ROAM                      341
-#define BOS4_RECOG                     342
-#define BOS4_ATTACK                    343
-#define BOS4_PAIN                      344
-#define BOS4_DYING                     345
-#define NEWBEAST_ATTACKMISS            346
-#define VOL4_2                         347
-#define COOKINGDEEPFRIER               348
-#define WHINING_DOG                    349
-#define DEAD_DOG                       350
+#define ENDSEQVOL2SND1                 227
+// #define ENDSEQVOL2SND2                 296
+// #define ENDSEQVOL2SND3                 297
+#define ENDSEQVOL2SND4                 228
+// #define ENDSEQVOL2SND5                 299
+// #define ENDSEQVOL2SND6                 300
+// #define ENDSEQVOL2SND7                 301
+#define GENERIC_AMBIENCE23             229
+// #define SOMETHINGFROZE                 303
+#define DUKE_LONGTERM_PAIN5            230
+#define DUKE_LONGTERM_PAIN6            231
+#define DUKE_LONGTERM_PAIN7            232
+#define DUKE_LONGTERM_PAIN8            233
+#define WIND_REPEAT                    234
+// #define MYENEMY_ROAM                   309
+// #define MYENEMY_HURT                   310
+// #define MYENEMY_DEAD                   311
+// #define MYENEMY_SHOOT                  312
+// #define STORE_MUSIC                    313
+// #define STORE_MUSIC_BROKE              314
+#define ACTOR_GROWING                  235
+#define NEWBEAST_ROAM                  236
+#define NEWBEAST_RECOG                 237
+#define NEWBEAST_ATTACK                238
+#define NEWBEAST_PAIN                  239
+#define NEWBEAST_DYING                 240
+#define NEWBEAST_SPIT                  241
+// #define VOL4_1                         322
+// #define SUPERMARKET                    323
+// #define MOUSEANNOY                     324
+// #define BOOKEM                         325
+// #define SUPERMARKETCRY                 326
+// #define DESTRUCT                       327
+// #define EATFOOD                        328
+#define MAKEMYDAY                      242
+// #define WITNESSSTAND                   330
+// #define VACATIONSPEECH                 331
+// #define YIPPEE1                        332
+// #define YOHOO1                         333
+// #define YOHOO2                         334
+// #define DOLPHINSND                     335
+// #define TOUGHGALSND1                   336
+// #define TOUGHGALSND2                   337
+// #define TOUGHGALSND3                   338
+// #define TOUGHGALSND4                   339
+// #define TANK_ROAM                      340
+// #define BOS4_ROAM                      341
+// #define BOS4_RECOG                     342
+// #define BOS4_ATTACK                    343
+// #define BOS4_PAIN                      344
+// #define BOS4_DYING                     345
+#define NEWBEAST_ATTACKMISS            243
+#define VOL4_2                         244
+#define COOKINGDEEPFRIER               245
+// #define WHINING_DOG                    349
+// #define DEAD_DOG                       350
 #define LIGHTNING_SLAP                 246
 #define THUNDER                        247
-#define HAPPYMOUSESND1                 353
-#define HAPPYMOUSESND2                 354
-#define HAPPYMOUSESND3                 355
-#define HAPPYMOUSESND4                 356
-#define ALARM                          357
-#define RAIN                           358
-#define DTAG_GREENRUN                  359
-#define DTAG_BROWNRUN                  360
-#define DTAG_GREENSCORE                361
-#define DTAG_BROWNSCORE                362
-#define INTRO4_1                       363
-#define INTRO4_2                       364
-#define INTRO4_3                       365
-#define INTRO4_4                       366
-#define INTRO4_5                       367
-#define INTRO4_6                       368
-#define SCREECH                        369
-#define BOSS4_DEADSPEECH               370
-#define BOSS4_FIRSTSEE                 371
-#define PARTY_SPEECH                   372
-#define POSTAL_SPEECH                  373
-#define TGSPEECH                       374
-#define DOGROOMSPEECH                  375
-#define SMACKED                        376
-#define MDEVSPEECH                     377
-#define AREA51SPEECH                   378
-#define JEEPSOUND                      379
-#define BIGDOORSLAM                    380
-#define BOS4_LAY                       381
-#define WAVESOUND                      382
-#define ILLBEBACK                      383
-#define VOL4ENDSND1                    384
-#define VOL4ENDSND2                    385
-#define EXPANDERHIT                    386
-#define SNAKESPEECH                    387
+// #define HAPPYMOUSESND1                 353
+// #define HAPPYMOUSESND2                 354
+// #define HAPPYMOUSESND3                 355
+// #define HAPPYMOUSESND4                 356
+// #define ALARM                          357
+#define RAIN                           248
+// #define DTAG_GREENRUN                  359
+// #define DTAG_BROWNRUN                  360
+// #define DTAG_GREENSCORE                361
+// #define DTAG_BROWNSCORE                362
+// #define INTRO4_1                       363
+#define INTRO4_2                       249
+// #define INTRO4_3                       365
+// #define INTRO4_4                       366
+#define INTRO4_5                       250
+// #define INTRO4_6                       368
+// #define SCREECH                        369
+// #define BOSS4_DEADSPEECH               370
+// #define BOSS4_FIRSTSEE                 371
+// #define PARTY_SPEECH                   372
+// #define POSTAL_SPEECH                  373
+// #define TGSPEECH                       374
+// #define DOGROOMSPEECH                  375
+// #define SMACKED                        376
+// #define MDEVSPEECH                     377
+// #define AREA51SPEECH                   378
+// #define JEEPSOUND                      379
+// #define BIGDOORSLAM                    380
+// #define BOS4_LAY                       381
+// #define WAVESOUND                      382
+// #define ILLBEBACK                      383
+// #define VOL4ENDSND1                    384
+// #define VOL4ENDSND2                    385
+#define EXPANDERHIT                    251
+#define SNAKESPEECH                    252
 #define EXPANDERSHOOT                  253
-#define GETBACKTOWORK                  389
-#define JIBBED_ACTOR14                 390
-#define JIBBED_ACTOR15                 391
-#define INTRO4_B                       392
-#define BIGBANG                        393
-#define SMACKIT                        394
-#define BELLSND                        395
+// #define GETBACKTOWORK                  389
+// #define JIBBED_ACTOR14                 390
+// #define JIBBED_ACTOR15                 391
+// #define INTRO4_B                       392
+// #define BIGBANG                        393
+// #define SMACKIT                        394
+// #define BELLSND                        395
+#define SND254                         254
+#define GOAWAY                         255
 #define SND256                         256
 #define SND257                         257
 #define SND258                         258
