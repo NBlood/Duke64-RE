@@ -496,4 +496,13 @@ extern char splitscreenpeek;
 
 extern char colortable[14][6];
 
+extern int D_800D3780, D_800D3784;
+
+extern int globalang;
+extern int globalhoriz;
+extern int globalposx;
+extern int globalposy;
+extern int globalposz;
+extern short globalsectnum;
+
 #include "funct.h"

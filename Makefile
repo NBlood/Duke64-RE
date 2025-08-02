@@ -35,7 +35,7 @@ OBJECTS := \
     $(OUTPUT)/src/getangle.o \
     $(OUTPUT)/asm/draw.o \
     $(OUTPUT)/asm/rnc.o \
-    $(OUTPUT)/asm/display1.o \
+    $(OUTPUT)/src/display1.o \
     $(OUTPUT)/src/cache1d.o \
     $(OUTPUT)/src/display2.o \
     $(OUTPUT)/src/actors1.o \
@@ -239,8 +239,7 @@ OBJECTS := \
     $(OUTPUT)/data/asm/rend2.data.o \
     $(OUTPUT)/data/asm/draw.data.o \
     $(OUTPUT)/data/asm/tileinfo.data.o \
-    $(OUTPUT)/data/asm/display1.data.o \
-    $(OUTPUT)/data/src/game3.data.o \
+    $(OUTPUT)/data/src/display1.data.o \
     $(OUTPUT)/data/asm/tables.data.o \
     $(OUTPUT)/data/asm/menues.data.o \
     $(OUTPUT)/data/asm/global.data.o \

@@ -38,6 +38,8 @@ extern void doanimations(void );
 extern int getanimationgoal(long *animptr);
 //#line "sector.c" 315
 extern int setanimation(short animsect,long *animptr,long thegoal,long thevel);
+//#line "sector.c" 348
+extern void animatecamsprite(void );
 //#line "sector.c" 369
 extern void animatewalls(void );
 //#line "sector.c" 457
@@ -110,6 +112,22 @@ extern long hitawall(struct player_struct *p,short *hitw);
 extern short aim(spritetype *s,short aang);
 //#line "player.c" 234
 extern void shoot(short i,short atwith);
+//#line "player.c" 939
+extern void displayloogie(short snum);
+//#line "player.c" 958
+extern char animatefist(short gs,short snum);
+//#line "player.c" 986
+extern char animateknee(short gs,short snum);
+//#line "player.c" 1002
+extern char animateknuckles(short gs,short snum);
+//#line "player.c" 1022
+extern void displaymasks(short snum);
+//#line "player.c" 1043
+extern char animatetip(short gs,short snum);
+//#line "player.c" 1064
+extern char animateaccess(short gs,short snum);
+//#line "player.c" 1090
+extern void displayweapon(short snum);
 //#line "player.c" 1501
 extern void getinput(short snum);
 //#line "player.c" 1742
@@ -140,12 +158,20 @@ extern short badguypic(short pn);
 extern short inventory(spritetype *s);
 //#line "game.c" 976
 extern void myospal(long x,long y,short tilenum,signed char shade,char orientation,char p);
+//#line "game.c" 1318
+extern void coolgaugetext(void);
 //#line "game.c" 1607
 extern void operatefta(void);
 //#line "game.c" 1654
 extern void FTA(short q,struct player_struct *p);
 //#line "game.c" 1705
 extern void gameexit(char *t);
+//#line "game.c" 2047
+extern void updatesectorz(long x,long y,long z,short *sectnum);
+//#line "game.c" 2085
+extern void view(struct player_struct *pp,long *vx,long *vy,long *vz,short *vsectnum,short ang,short horiz);
+//#line "game.c" 2200
+extern void displayrooms(short snum,long smoothratio);
 //#line "game.c" 2445
 extern short LocateTheLocator(short n,short sn);
 //#line "game.c" 2459
@@ -267,3 +293,5 @@ void rotatespritesc(float, float, float, float, int, int);
 void rendertileworld(float, float, float, float, int, int);
 void setfxcolor(char, char, char, char, char, char);
 void unsetfxsprite(void);
+void getviewborder(short, short*, short*, short*, short*);
+void clearscreen(void);

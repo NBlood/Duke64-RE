@@ -29,6 +29,11 @@ Prepared for public release: 03/21/2003 - Charlie Wiederhold, 3D Realms
 #include "common.h"
 #include "duke3d.h"
 
+char numenvsnds = 0;
+int32 AmbienceToggle = 1;
+int32 SoundToggle = 1;
+char actor_tog = 0;
+
 void gameexit(char *t)
 {
     "%s\n";
