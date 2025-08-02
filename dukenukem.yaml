@@ -86,7 +86,7 @@ segments:
       - [0x24020, c, src/getangle]
       - [0x242B0, asm, asm/draw]
  #     - [auto, asm, tileinfo]
-      - [0x25CF0, asm, asm/rnc]
+      - [0x25CF0, c, src/rnc]
       - [0x268B0, c, src/display1]
       - [0x273F0, c, src/cache1d]
       - [0x27BC0, c, src/display2]
@@ -401,7 +401,7 @@ segments:
       - { type: bss, vram: 0x8021A400, name: asm/rend1 }
       - { type: bss, vram: 0x8025C370, name: asm/rend2 }
       - { type: bss, vram: 0x8026ECB0, name: asm/draw }
-      - { type: bss, vram: 0x8026ECC0, name: asm/rnc }
+      - { type: .bss, vram: 0x8026ECC0, name: src/rnc }
       - { type: .bss, vram: 0x8026EFE0, name: src/cache1d }
       - { type: .bss, vram: 0x80272300, name: src/actors1 }
       - { type: .bss, vram: 0x80272310, name: src/gamedef }

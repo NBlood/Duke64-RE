@@ -34,7 +34,7 @@ OBJECTS := \
     $(OUTPUT)/asm/rend2.o \
     $(OUTPUT)/src/getangle.o \
     $(OUTPUT)/asm/draw.o \
-    $(OUTPUT)/asm/rnc.o \
+    $(OUTPUT)/src/rnc.o \
     $(OUTPUT)/src/display1.o \
     $(OUTPUT)/src/cache1d.o \
     $(OUTPUT)/src/display2.o \
@@ -267,7 +267,7 @@ OBJECTS := \
     $(OUTPUT)/data/asm/rend1.bss.o \
     $(OUTPUT)/data/asm/rend2.bss.o \
     $(OUTPUT)/data/asm/draw.bss.o \
-    $(OUTPUT)/data/asm/rnc.bss.o \
+    $(OUTPUT)/data/src/rnc.bss.o \
     $(OUTPUT)/data/asm/menues.bss.o \
     $(OUTPUT)/data/asm/global.bss.o \
     $(OUTPUT)/data/asm/global2.bss.o \

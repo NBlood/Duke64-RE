@@ -295,3 +295,4 @@ void setfxcolor(char, char, char, char, char, char);
 void unsetfxsprite(void);
 void getviewborder(short, short*, short*, short*, short*);
 void clearscreen(void);
+short RNCDecompress(char* in, char* out);
