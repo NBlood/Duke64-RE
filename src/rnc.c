@@ -308,7 +308,6 @@ l2:
     return 0;
 }
 
-#ifdef NON_MATCHING
 short RNCDecompress(char* in, char* out)
 {
     unsigned long len;
@@ -319,9 +318,6 @@ short RNCDecompress(char* in, char* out)
     len = (in[4] << 0x18) | (in[5] << 0x10) | (in[6] << 8) | in[7];
     switch (in[3])
     {
-        default:
-            status = -2;
-            break;
         case 0:
             fastmemcpy(out, in + 8, len);
             status = 0;
@@ -332,10 +328,9 @@ short RNCDecompress(char* in, char* out)
         case 2:
             status = RNCDecompress2(in, out);
             break;
+        default:
+            status = -2;
     }
     if (status != 0)  while(1);
     return status;
 }
-#else
-#pragma GLOBAL_ASM("nonmatchings/src/rnc/RNCDecompress.s")
-#endif
