@@ -123,12 +123,12 @@ typedef struct
 	int picanm;
 	short tilesizx;
 	short tilesizy;
-	short memsiz;
-	short dim1;
-	short dim2;
-	short flags;
-	short tile;
-	short unk;
+	unsigned short memsiz;
+	unsigned short dim1;
+	unsigned short dim2;
+	unsigned short flags;
+	unsigned short tile;
+	unsigned short unk;
 } tileinfo_t;
 
 EXTERN sectortype sector[MAXSECTORS];
@@ -250,7 +250,7 @@ int FindDistance3D(int x, int y, int z);
 int gettilesizx(unsigned short picnum);
 int gettilesizy(unsigned short picnum);
 int getpicanm(unsigned short picnum);
-int gettileid(unsigned short picnum);
+unsigned short gettileid(unsigned short picnum);
 
 void adjustceilingpanning(unsigned short, short, short);
 void adjustfloorpanning(unsigned short, short, short);

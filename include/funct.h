@@ -296,3 +296,7 @@ void unsetfxsprite(void);
 void getviewborder(short, short*, short*, short*, short*);
 void clearscreen(void);
 short RNCDecompress(char* in, char* out);
+void rotatesprite_simple(int, int, unsigned short);
+void rotatesprite_simplest(int, int, unsigned short);
+short getnextweapon(struct player_struct *p, short k, short j);
+void menutext(short, short, char*);

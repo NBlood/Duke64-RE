@@ -209,62 +209,62 @@ unsigned short RNCDecompress2(char* arg0, char* arg1)
     func_800700F0(2);
     while (D_8026ECC8 < D_8026ECCC)
     {
-l1:
-        while (func_800700F0(1) == 0)
+        while (1)
         {
-            *D_8026ECC8++ = *D_8026ECC4++;
-        }
-        if (func_800700F0(1) != 0)
-        {
-            if (func_800700F0(1) == 0)
+            while (func_800700F0(1) == 0)
             {
-                size = 2;
-                offset = *D_8026ECC4++ + 1;
+                *D_8026ECC8++ = *D_8026ECC4++;
             }
-            else
+            if (func_800700F0(1) != 0)
             {
                 if (func_800700F0(1) == 0)
                 {
-                    size = 3;
+                    size = 2;
+                    offset = *D_8026ECC4++ + 1;
                 }
                 else
                 {
-                    size = *D_8026ECC4++ + 8;
-                    if (size == 8)
+                    if (func_800700F0(1) == 0)
                     {
-                        goto l2;
+                        size = 3;
                     }
+                    else
+                    {
+                        size = *D_8026ECC4++ + 8;
+                        if (size == 8)
+                        {
+                            break;
+                        }
+                    }
+                    offset = func_800701A0();
                 }
-                offset = func_800701A0();
-            }
-            src = D_8026ECC8 - offset;
-            while (size--)
-            {
-                *D_8026ECC8++ = *src++;
-            }
-        }
-        else
-        {
-            size = func_80070274();
-            if (size == 9)
-            {
-                size = (func_800700F0(4) * 4) + 12;
-                while (size--)
-                {
-                    *D_8026ECC8++ = *D_8026ECC4++;
-                }
-            }
-            else
-            {
-                src = D_8026ECC8 - func_800701A0();
+                src = D_8026ECC8 - offset;
                 while (size--)
                 {
                     *D_8026ECC8++ = *src++;
                 }
             }
+            else
+            {
+                size = func_80070274();
+                if (size == 9)
+                {
+                    size = (func_800700F0(4) * 4) + 12;
+                    while (size--)
+                    {
+                        *D_8026ECC8++ = *D_8026ECC4++;
+                    }
+                }
+                else
+                {
+                    src = D_8026ECC8 - func_800701A0();
+                    while (size--)
+                    {
+                        *D_8026ECC8++ = *src++;
+                    }
+                }
+            }
         }
-        goto l1;
-l2:
         func_800700F0(1);
     }
     return 0;

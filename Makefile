@@ -33,7 +33,8 @@ OBJECTS := \
     $(OUTPUT)/asm/rend1.o \
     $(OUTPUT)/asm/rend2.o \
     $(OUTPUT)/src/getangle.o \
-    $(OUTPUT)/asm/draw.o \
+    $(OUTPUT)/src/draw.o \
+    $(OUTPUT)/src/tileinfo.o \
     $(OUTPUT)/src/rnc.o \
     $(OUTPUT)/src/display1.o \
     $(OUTPUT)/src/cache1d.o \
@@ -53,6 +54,7 @@ OBJECTS := \
     $(OUTPUT)/src/sector.o \
     $(OUTPUT)/src/board.o \
     $(OUTPUT)/src/tile.o \
+    $(OUTPUT)/src/tables.o \
     $(OUTPUT)/src/dukebot.o \
     $(OUTPUT)/asm/menues.o \
     $(OUTPUT)/src/libultra/io/viblack.o \
@@ -237,10 +239,6 @@ OBJECTS := \
     $(OUTPUT)/data/asm/sound2.data.o \
     $(OUTPUT)/data/asm/rend1.data.o \
     $(OUTPUT)/data/asm/rend2.data.o \
-    $(OUTPUT)/data/asm/draw.data.o \
-    $(OUTPUT)/data/asm/tileinfo.data.o \
-    $(OUTPUT)/data/src/display1.data.o \
-    $(OUTPUT)/data/asm/tables.data.o \
     $(OUTPUT)/data/asm/menues.data.o \
     $(OUTPUT)/data/asm/global.data.o \
     $(OUTPUT)/data/asm/libultra/os/exceptasm.data.o \
@@ -253,7 +251,6 @@ OBJECTS := \
     $(OUTPUT)/data/asm/sound1.rodata.o \
     $(OUTPUT)/data/asm/rend1.rodata.o \
     $(OUTPUT)/data/asm/rend2.rodata.o \
-    $(OUTPUT)/data/asm/draw.rodata.o \
     $(OUTPUT)/data/asm/menues.rodata.o \
     $(OUTPUT)/data/asm/libultra/os/setintmask.rodata.o \
     $(OUTPUT)/data/asm/libultra/os/exceptasm.rodata.o \
@@ -266,8 +263,6 @@ OBJECTS := \
     $(OUTPUT)/data/asm/sound1.bss.o \
     $(OUTPUT)/data/asm/rend1.bss.o \
     $(OUTPUT)/data/asm/rend2.bss.o \
-    $(OUTPUT)/data/asm/draw.bss.o \
-    $(OUTPUT)/data/src/rnc.bss.o \
     $(OUTPUT)/data/asm/menues.bss.o \
     $(OUTPUT)/data/asm/global.bss.o \
     $(OUTPUT)/data/asm/global2.bss.o \

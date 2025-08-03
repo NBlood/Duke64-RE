@@ -30,6 +30,7 @@ Prepared for public release: 03/21/2003 - Charlie Wiederhold, 3D Realms
 #include "common.h"
 #include "duke3d.h"
 
+long cameradist = 0, cameraclock = 0;
 
 void updatesectorz(long x, long y, long z, short *sectnum)
 {

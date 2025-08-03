@@ -84,8 +84,8 @@ segments:
       - [0xF020, asm, asm/rend1]
       - [0x111F0, asm, asm/rend2]
       - [0x24020, c, src/getangle]
-      - [0x242B0, asm, asm/draw]
- #     - [auto, asm, tileinfo]
+      - [0x242B0, c, src/draw]
+      - [auto, c, src/tileinfo]
       - [0x25CF0, c, src/rnc]
       - [0x268B0, c, src/display1]
       - [0x273F0, c, src/cache1d]
@@ -105,7 +105,7 @@ segments:
       - [0x62500, c, src/sector]
       - [0x6A880, c, src/board]
       - [0x6AA50, c, src/tile]
- #     - [auto, asm, tables]
+      - [auto, c, src/tables]
       - [0x6AB40, c, src/dukebot]
       - [0x6D2A0, asm, asm/menues]
  #     - [auto, asm, global]
@@ -298,9 +298,9 @@ segments:
       - [0x8A990, data, asm/rend1]
       - [0x8F660, data, asm/rend2]
       - [0x903A0, .data, src/getangle]
-      - [0x90BB0, data, asm/draw]
-      - [0x90BF0, data, asm/tileinfo]
-      - [0xA43D0, data, src/display1]
+      - [0x90BB0, .data, src/draw]
+      - [0x90BF0, .data, src/tileinfo]
+      - [0xA43D0, .data, src/display1]
       - [0xA43E0, .data, src/cache1d]
       - [0xA4400, .data, src/display2]
       - [0xA44C0, .data, src/actors1]
@@ -312,7 +312,7 @@ segments:
       - [0xB5220, .data, src/player1]
       - [0xB5240, .data, src/premap]
       - [0xB5250, .data, src/sector]
-      - [0xB5260, data, asm/tables]
+      - [0xB5260, .data, src/tables]
       - [0xB6C60, .data, src/dukebot]
       - [0xB6EA0, data, asm/menues]
       - [0xB6F70, data, asm/global]
@@ -348,7 +348,7 @@ segments:
       - [0xBA340, rodata, asm/rend1]
       - [0xBA4D0, rodata, asm/rend2]
       - [0xBAD30, .rodata, src/getangle]
-      - [0xBAD50, rodata, asm/draw]
+      - [0xBAD50, .rodata, src/draw]
       - [0xBAD90, .rodata, src/cache1d]
       - [0xBAE00, .rodata, src/display2]
       - [0xBAF00, .rodata, src/actors1]
@@ -400,7 +400,7 @@ segments:
       - { type: bss, vram: 0x801CD840, name: asm/sound1 }
       - { type: bss, vram: 0x8021A400, name: asm/rend1 }
       - { type: bss, vram: 0x8025C370, name: asm/rend2 }
-      - { type: bss, vram: 0x8026ECB0, name: asm/draw }
+      - { type: .bss, vram: 0x8026ECB0, name: src/draw }
       - { type: .bss, vram: 0x8026ECC0, name: src/rnc }
       - { type: .bss, vram: 0x8026EFE0, name: src/cache1d }
       - { type: .bss, vram: 0x80272300, name: src/actors1 }
