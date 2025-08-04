@@ -30,7 +30,7 @@ OBJECTS := \
     $(OUTPUT)/asm/boss2.o \
     $(OUTPUT)/asm/sound1.o \
     $(OUTPUT)/asm/sound2.o \
-    $(OUTPUT)/asm/rend1.o \
+    $(OUTPUT)/src/rend1.o \
     $(OUTPUT)/asm/rend2.o \
     $(OUTPUT)/src/getangle.o \
     $(OUTPUT)/src/draw.o \
@@ -237,7 +237,7 @@ OBJECTS := \
     $(OUTPUT)/data/asm/boss2.data.o \
     $(OUTPUT)/data/asm/sound1.data.o \
     $(OUTPUT)/data/asm/sound2.data.o \
-    $(OUTPUT)/data/asm/rend1.data.o \
+    $(OUTPUT)/data/src/rend1.data.o \
     $(OUTPUT)/data/asm/rend2.data.o \
     $(OUTPUT)/data/asm/menues.data.o \
     $(OUTPUT)/data/asm/global.data.o \
@@ -249,7 +249,6 @@ OBJECTS := \
     $(OUTPUT)/data/asm/logo.rodata.o \
     $(OUTPUT)/data/asm/boss2.rodata.o \
     $(OUTPUT)/data/asm/sound1.rodata.o \
-    $(OUTPUT)/data/asm/rend1.rodata.o \
     $(OUTPUT)/data/asm/rend2.rodata.o \
     $(OUTPUT)/data/asm/menues.rodata.o \
     $(OUTPUT)/data/asm/libultra/os/setintmask.rodata.o \
@@ -261,7 +260,7 @@ OBJECTS := \
     $(OUTPUT)/data/asm/game2.bss.o \
     $(OUTPUT)/data/asm/boss2.bss.o \
     $(OUTPUT)/data/asm/sound1.bss.o \
-    $(OUTPUT)/data/asm/rend1.bss.o \
+    $(OUTPUT)/data/src/rend1.bss.o \
     $(OUTPUT)/data/asm/rend2.bss.o \
     $(OUTPUT)/data/asm/menues.bss.o \
     $(OUTPUT)/data/asm/global.bss.o \

@@ -279,7 +279,7 @@ void loadgame(void);
 void func_8005B5F0(int);
 void func_80059398(int, signed char);
 void resetsbarscroll(void);
-void clearbufbyte(unsigned int, unsigned int, unsigned int);
+void clearbufbyte(unsigned long, char, unsigned int);
 
 void gametext(short, short, char *);
 void setrotatespriteflags(short, short, short, short);

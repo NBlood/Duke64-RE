@@ -81,7 +81,7 @@ segments:
       - [0xBD50, asm, asm/boss2]
       - [0xC9B0, asm, asm/sound1]
       - [0xDEF0, asm, asm/sound2]
-      - [0xF020, asm, asm/rend1]
+      - [0xF020, c, src/rend1]
       - [0x111F0, asm, asm/rend2]
       - [0x24020, c, src/getangle]
       - [0x242B0, c, src/draw]
@@ -295,7 +295,7 @@ segments:
       - [0x895B0, data, asm/boss2]
       - [0x8A490, data, asm/sound1]
       - [0x8A980, data, asm/sound2]
-      - [0x8A990, data, asm/rend1]
+      - [0x8A990, data, src/rend1]
       - [0x8F660, data, asm/rend2]
       - [0x903A0, .data, src/getangle]
       - [0x90BB0, .data, src/draw]
@@ -345,7 +345,7 @@ segments:
       - [0xB9C60, rodata, asm/logo]
       - [0xBA1B0, rodata, asm/boss2]
       - [0xBA200, rodata, asm/sound1]
-      - [0xBA340, rodata, asm/rend1]
+      - [0xBA340, .rodata, src/rend1]
       - [0xBA4D0, rodata, asm/rend2]
       - [0xBAD30, .rodata, src/getangle]
       - [0xBAD50, .rodata, src/draw]
@@ -398,7 +398,7 @@ segments:
       - { type: bss, vram: 0x801CB920, name: asm/game2 }
       - { type: bss, vram: 0x801CBE00, name: asm/boss2 }
       - { type: bss, vram: 0x801CD840, name: asm/sound1 }
-      - { type: bss, vram: 0x8021A400, name: asm/rend1 }
+      - { type: bss, vram: 0x8021A400, name: src/rend1 }
       - { type: bss, vram: 0x8025C370, name: asm/rend2 }
       - { type: .bss, vram: 0x8026ECB0, name: src/draw }
       - { type: .bss, vram: 0x8026ECC0, name: src/rnc }

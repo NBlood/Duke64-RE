@@ -50,7 +50,7 @@ typedef struct
 	short ceilingpicnum, ceilingheinum;
 	short floorpicnum, floorheinum;
 	short lotag, hitag, extra;
-	short floorvertex, ceilingcertex;
+	unsigned short floorvertex, ceilingvertex;
 	signed char ceilingshade;
 	char ceilingpal, ceilingxpanning, ceilingypanning;
 	signed char floorshade;
@@ -130,6 +130,13 @@ typedef struct
 	unsigned short tile;
 	unsigned short unk;
 } tileinfo_t;
+
+typedef struct
+{
+	short x, y, z, u, v;
+} vertex_t;
+
+#define VERTEXBASE ((vertex_t*)0x802C5000)
 
 EXTERN sectortype sector[MAXSECTORS];
 EXTERN walltype wall[MAXWALLS];
