@@ -15,6 +15,11 @@ extern int ms_x;
 extern int ms_y;
 extern unsigned short ms_angle;
 
+extern int viswallcnt;
+extern unsigned short viswall[512];
+extern float viswallr1[512];
+extern float viswallr2[512];
+
 #pragma GLOBAL_ASM("nonmatchings/src/rend1/func_80059420.s")
 
 #pragma GLOBAL_ASM("nonmatchings/src/rend1/func_80059468.s")
@@ -55,7 +60,18 @@ float getanglef2(float x1, float y1, float x2, float y2)
 
 #pragma GLOBAL_ASM("nonmatchings/src/rend1/scansector.s")
 
-#pragma GLOBAL_ASM("nonmatchings/src/rend1/occladdwall.s")
+char viswallcheck(int w, float f1, float f2)
+{
+    int i;
+    for (i = 0; i < viswallcnt; i++)
+    {
+        if (viswall[i] != w)
+            continue;
+        if (getangledelta(f1, viswallr1[i]) <= 0 && getangledelta(f2, viswallr2[i]) >= 0)
+            return 0;
+    }
+    return 1;
+}
 
 #pragma GLOBAL_ASM("nonmatchings/src/rend1/drawrooms_.s")
 
@@ -143,7 +159,7 @@ void floorupdatez(unsigned short sectnum)
     unsigned short floorvtxcount;
     unsigned short i;
 
-    vtx = &((vertex_t*)VERTEXBASE)[sector[sectnum].floorvertex];
+    vtx = &VERTEXBASE[sector[sectnum].floorvertex];
     floorvtxcount = sector[sectnum].floorvtxcount * 3;
 
     if ((sector[sectnum].floorstat & 2) == 2)
@@ -342,11 +358,126 @@ void ms_update(unsigned short sectnum, unsigned short ang, int x, int y)
     }
 }
 
-#pragma GLOBAL_ASM("nonmatchings/src/rend1/adjustceilingpanning.s")
+void adjustceilingpanning(unsigned short sectnum, short x, short y)
+{
+    unsigned short ceilingvtxcount;
+    unsigned short i;
+    unsigned short j;
+    vertex_t *vtx;
+    int u[3];
+    int v[3];
+    
+    ceilingvtxcount = sector[sectnum].ceilingvtxcount;
+    vtx = &VERTEXBASE[sector[sectnum].ceilingvertex];
 
-#pragma GLOBAL_ASM("nonmatchings/src/rend1/adjustfloorpanning.s")
+    x <<= 3;
+    y <<= 3;
 
-#pragma GLOBAL_ASM("nonmatchings/src/rend1/resetboardtimer.s")
+    for (i = 0; i < ceilingvtxcount; i++)
+    {
+        for (j = 0; j < 3; j++)
+        {
+            u[j] = vtx->u + x;
+            v[j] = vtx->v + y;
+            vtx++;
+        }
+        while (u[0] < 32760 || u[1] < 32760 || u[2] < 32760)
+        {
+            u[0] += 4096;
+            u[1] += 4096;
+            u[2] += 4096;
+        }
+        while (u[0] > 32760 || u[1] > 32760 || u[2] > 32760)
+        {
+            u[0] -= 4096;
+            u[1] -= 4096;
+            u[2] -= 4096;
+        }
+        while (v[0] < 32760 || v[1] < 32760 || v[2] < 32760)
+        {
+            v[0] += 4096;
+            v[1] += 4096;
+            v[2] += 4096;
+        }
+        while (v[0] > 32760 || v[1] > 32760 || v[2] > 32760)
+        {
+            v[0] -= 4096;
+            v[1] -= 4096;
+            v[2] -= 4096;
+        }
+        vtx -= 3;
+        for (j = 0; j < 3; j++)
+        {
+            vtx->u = u[j];
+            vtx->v = v[j];
+            vtx++;
+        }
+    }
+}
+
+void adjustfloorpanning(unsigned short sectnum, short x, short y)
+{
+    unsigned short floorvtxcount;
+    unsigned short i;
+    unsigned short j;
+    vertex_t *vtx;
+    int u[3];
+    int v[3];
+    
+    floorvtxcount = sector[sectnum].floorvtxcount;
+    vtx = &VERTEXBASE[sector[sectnum].floorvertex];
+
+    x <<= 3;
+    y <<= 3;
+
+    for (i = 0; i < floorvtxcount; i++)
+    {
+        for (j = 0; j < 3; j++)
+        {
+            u[j] = vtx->u + x;
+            v[j] = vtx->v + y;
+            vtx++;
+        }
+        while (u[0] < 32760 || u[1] < 32760 || u[2] < 32760)
+        {
+            u[0] += 4096;
+            u[1] += 4096;
+            u[2] += 4096;
+        }
+        while (u[0] > 32760 || u[1] > 32760 || u[2] > 32760)
+        {
+            u[0] -= 4096;
+            u[1] -= 4096;
+            u[2] -= 4096;
+        }
+        while (v[0] < 32760 || v[1] < 32760 || v[2] < 32760)
+        {
+            v[0] += 4096;
+            v[1] += 4096;
+            v[2] += 4096;
+        }
+        while (v[0] > 32760 || v[1] > 32760 || v[2] > 32760)
+        {
+            v[0] -= 4096;
+            v[1] -= 4096;
+            v[2] -= 4096;
+        }
+        vtx -= 3;
+        for (j = 0; j < 3; j++)
+        {
+            vtx->u = u[j];
+            vtx->v = v[j];
+            vtx++;
+        }
+    }
+}
+
+extern int boardtimer;
+
+void resetboardtimer(void)
+{
+    boardtimer = 0;
+}
 
 #pragma GLOBAL_ASM("nonmatchings/src/rend1/demoinput.s")
 
