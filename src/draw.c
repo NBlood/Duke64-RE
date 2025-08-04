@@ -225,27 +225,20 @@ void drawbaroverlay(short snum)
     }
 }
 
-#ifdef NON_MATCHING
 void displayinvsprite(short x, short y, short ang, unsigned short tile)
 {
     int ox;
     float siz;
-    short shade;
-    short alpha;
+    float shade;
 
     ox = (sintable[(ang * 6) & 2047] * 60) >> 14;
     siz = sintable[(ang * 6 + 512) & 2047] / 65536.0 + 0.75;
-    shade = ((siz * 5) - 4) * 255;
-    alpha = ((siz * 2) - 1.0) * 256;
-    setrotatespriteflags(shade, shade, shade, alpha);
+    shade = siz * 5 - 4;
+    setrotatespriteflags(255 * shade, 255 * shade, 255 * shade, ((siz * 2) - 1.0) * 256);
     rotatesprite(x + ox, y,
                  invtilescale(16, tile) * siz,
                  invtilescale(16, tile) * siz, tile, 0);
 }
-#else
-#pragma GLOBAL_ASM("nonmatchings/src/draw/displayinvsprite.s")
-void displayinvsprite(short x, short y, short ang, unsigned short tile);
-#endif
 
 void displayinvweapons(short snum)
 {
